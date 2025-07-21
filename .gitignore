@@ -1,0 +1,54 @@
+# Kirby CMS & PHP recommended .gitignore
+
+# Kirby content cache and thumbs
+tumbs/
+site/cache/
+
+# Kirby accounts (if you want to keep user accounts private)
+site/accounts/
+
+# Kirby logs
+site/registrations.log
+
+# Environment files
+.env
+.env.*
+
+# Composer dependencies
+/vendor/
+/kirby/vendor/
+/panel/vendor/
+
+# Node dependencies
+node_modules/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# SASS/SCSS cache
+.sass-cache/
+
+# Log files
+*.log
+
+# Backup files
+*~
+*.bak
+
+# Docker
+*.pid
+
+# Misc
+*.swp
+*.tmp
+
+# Exclude sensitive config (uncomment if needed)
+# site/config/config.php
+# site/config/config.*.php 
