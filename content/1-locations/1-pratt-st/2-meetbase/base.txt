@@ -1,0 +1,87 @@
+Title: Meetbase
+
+----
+
+Price: 45
+
+----
+
+Subtitle: Conference/Meeting Room
+
+----
+
+Description: 
+
+Sometimes to get business done you need more than just yourself.  When you need to entertain clients of the community or host an important meeting, Meetbase is your solution.  At an affordable price, Meetbase at 300 W. Pratt offers an affordable conference room space that can be used by both members of Homebase and the community.
+
+All Meetbase rooms are equipped with stylish, conference style seating that can be arranged for any style event.  Don't need seating and want to make room to mingle? Not a problem, just let us know ahead of time what your plan is and we will work to make it happen!
+
+----
+
+Interval: hr
+
+----
+
+Intro: Schedule your next intro, quarterly, pitch, or shareholder meeting
+
+----
+
+Content: 
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Nulla pharetra diam sit amet nisl. Mattis pellentesque id nibh tortor id.
+
+Arcu bibendum at varius vel pharetra vel turpis. Quam elementum pulvinar etiam non. Auctor urna nunc id cursus. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Non curabitur gravida arcu ac tortor dignissim convallis aenean et.
+
+Imperdiet proin fermentum leo vel. Tempor id eu nisl nunc mi ipsum. Diam maecenas sed enim ut sem viverra aliquet eget. Morbi tempus iaculis urna id. Interdum posuere lorem ipsum dolor sit amet. Nisl condimentum id venenatis a condimentum. Bibendum at varius vel pharetra vel turpis nunc eget.
+
+Proin libero nunc consequat interdum varius sit.
+
+----
+
+Contents: 
+
+**When you use Meetbase you get can use all of the amenities that come along with it.**
+- Capacity for up to 12 people
+- Lightning Speed Wi-fi
+- LED Display connection
+
+**Who Needs Meetbase?**
+Meetbase is perfect for solopreneurs, small businesses and remote workers who need to use it for their
+- Business Launch
+- Client Introduction Session
+- Investment Pitch Meeting
+- Networking Events
+
+**Membership Makes Meetbase Better!**
+Choose a Homebase membership to improve your Meetbase experience.  With your Homebase membership you will receive these benefits:
+- An invitation to open events!
+- A Discount when you reserve a Meetbase in bulk!
+
+Send us a message today to inquire about how we can make your Meetbase vision happen.  Already have a date and a plan in mind, book your space at 300 W. Pratt today before someone else does!
+
+----
+
+Cover: homebase-prattst-25.jpg
+
+----
+
+Airtable: shrITqA67PDeXsq2S
+
+----
+
+Features: 
+
+- 
+  featuretitle: '8am-6pm : Mon-Fri Access'
+- 
+  featuretitle: Capacity up to 8 people
+- 
+  featuretitle: Amenities for public use
+- 
+  featuretitle: Attend public events
+- 
+  featuretitle: Bulk hours available
+
+----
+
+Icon: location

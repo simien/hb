@@ -1,0 +1,56 @@
+Title: Workbase
+
+----
+
+Price: 400
+
+----
+
+Subtitle: Reserved Workspace
+
+----
+
+Description: 
+
+Workbase is for the serious workers who want to be well-equipped for long days and late nights.  Every person who chooses to purchase a Workbase membership at Clipper Mill will get full access to the Homebase community and 24/7 access to their official workspace.  The best part is, after a late night at the office Workbase members won't even have to pack up their belongings because they will be kept safe and sound in their private, secured, workspace until they are ready to go the next day.
+ 
+All Workbase members will have a reserved workspace equipped with a Jarvis Standing desk, comfortable chair, storage and plenty of natural light.  For just $395/month dedicated small business owners and serious entrepreneurs won’t be able to find a better deal anywhere else!
+
+----
+
+Interval: mo
+
+----
+
+Intro: Reserved Workspace outfitted with a Jarvis Standing Desk.
+
+----
+
+Contents: 
+
+----
+
+Cover: openingsoon@2x.png
+
+----
+
+Airtable: shrF8JzHdIPGC9QWh
+
+----
+
+Features: 
+
+- 
+  featuretitle: 24/7 Secure Access
+- 
+  featuretitle: Reserved Workspace
+- 
+  featuretitle: 4 Meetbase Credits /mo
+- 
+  featuretitle: '10% Off Premium Events'
+- 
+  featuretitle: '10% Off Mailbase'
+
+----
+
+Icon: user

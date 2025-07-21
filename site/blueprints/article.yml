@@ -1,0 +1,39 @@
+title: Article
+
+pages: false
+
+fields:
+  title:
+    label: Title
+    type:  title
+
+  author:
+    label: Author
+    type: user
+    width: 1/4
+
+  date:
+    icon: calendar
+    label: Date
+    type: date
+    format: LL
+    placeholder: Select a date…
+    default: today
+    required: true
+    width: 1/4
+
+  scheduled:
+    label: Schedule
+    type: datetime
+    width: 1/2
+
+  indicator:
+    type: scheduled
+
+  cover:
+    label: Cover
+    type: image
+
+  text:
+    label: Text
+    type: textarea

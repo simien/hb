@@ -1,0 +1,139 @@
+.hb-cta-a {
+	background: $color-bkgd;
+	text-align: center;
+	padding: 5rem 2rem;
+	border: 2px solid darken($color-bkgd, 5%);
+	.info {
+		text-align: left;
+		display: inline-block;
+		margin-right: 0;
+		line-height: 1;
+		@media(max-width: 767px) {
+			text-align: center;
+			display: block;
+			margin-right: 0;
+			margin-bottom: 25px;
+		}
+		h4 {
+			color: $color-dark;
+			font-family: $font-rohn;
+			font-size: 2rem;
+			text-transform: uppercase;
+			letter-spacing: 0.05rem;
+			line-height: 1.8;
+			display: block;
+			@media(max-width: 767px) {
+				font-size: 2rem;
+			}
+		}
+		p {
+			margin-top: 0.4rem;
+			margin-bottom: 2rem;
+			color: $color-gray;
+			font-family: $font-secondary;
+			font-size: 1rem;
+		}
+		.btn {
+			font-size: 1rem;
+			padding-right: 2rem;
+			padding-left: 2rem;
+			@media(min-width: 992px) {
+				padding-right: 4rem;
+				padding-left: 4rem;
+			}
+		}
+	}
+}
+
+
+
+.hb-cta-b {
+	background: $color-primary;
+	text-align: center;
+	padding: 5rem 2rem;
+	.info {
+		text-align: left;
+		display: inline-block;
+		margin-right: 0;
+		line-height: 1;
+		@media(max-width: 767px) {
+			text-align: center;
+			display: block;
+			margin-right: 0;
+			margin-bottom: 25px;
+		}
+		strong {
+			color: $color-contrast;
+			font-size: 1rem;
+			line-height: 1.8;
+			display: block;
+			font-weight: 600;
+			text-shadow: $txtsd-light;
+			padding-bottom: 0.4rem;
+		}
+		p {
+			margin-top: 0.4rem;
+			margin-bottom: 2rem;
+			color: $color-gray;
+			text-shadow: $txtsd-light;
+			font-size: 1rem;
+		}
+	}
+	form {
+		margin-top: 0.5rem;
+
+		input[type="email"] {
+			padding-left: 17px;
+			border: 2px solid $color-dark;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+
+		.btn {
+			font-size: 1rem;
+			padding-right: 2rem;
+			padding-left: 2rem;
+			@media(min-width: 992px) {
+				padding-right: 4rem;
+				padding-left: 4rem;
+			}
+		}
+
+		.input-group-addon {
+			background-color: $color-global;
+			border: 2px solid $color-dark;
+			border-right: 0;
+			color: $color-light;
+		}
+	}
+}
+
+/* Jumbotron
+-------------------------------------------------- */
+
+.jumbotron {
+	padding-top: 15rem;
+	padding-bottom: 15rem;
+	margin-bottom: 0;
+	border-radius: 0;
+	p {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+}
+.jumbotron p:last-child {
+	margin-bottom: 0;
+}
+.jumbotron-heading {
+	font-family: $font-secondary;
+	font-size: 3rem;
+}
+.jumbotron .container {
+	max-width: 50rem;
+	.btn-send {
+		padding: 0.7rem 1.5rem 0.6rem;
+		margin-left: 1rem;
+	}
+}

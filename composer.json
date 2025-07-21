@@ -1,0 +1,5 @@
+{
+    "require": {
+        "mzur/kirby-uniform": "^3.4"
+    }
+}

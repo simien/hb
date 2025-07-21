@@ -1,0 +1,63 @@
+title: Base
+
+files:
+  sortable: true
+
+pages: false
+
+fields:
+  prevnext: prevnext
+
+  title:
+    label: Title
+    type:  text
+
+  subtitle:
+    label: Subtitle
+    type:  text
+    width: 1/3
+
+  intro:
+    label: Intro
+    type:  text
+    width: 2/3
+
+  airtable:
+    label: Airtable
+    type:  text
+    width: 1/3
+
+  price:
+    label: Price
+    type:  text
+    width: 1/3
+
+  interval:
+    label: Interval
+    type:  text
+    width: 1/3
+
+  cover:
+    label: Cover Image
+    type: image
+    width: 1/2
+
+  icon:
+    label: Icon
+    type: text
+    width: 1/2
+
+  description:
+    label: Description
+    type:  textarea
+
+  features:
+    label: Features
+    type: structure
+    style: table
+    entry:
+      - featuretitle
+    fields:
+      featuretitle:
+        label: Title
+        type: text

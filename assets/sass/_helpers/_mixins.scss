@@ -1,0 +1,260 @@
+//Cross browser CSS3 mixins
+
+@mixin button-clear {
+	background-color: transparent;
+    @include appearance(none);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    @include transition-primary;
+}
+
+@mixin input-placeholder {
+  -webkit-input-placeholder {@content};
+  -moz-placeholder          {@content};
+  -moz-placeholder          {@content};
+  -ms-input-placeholder     {@content}; 
+}
+
+@mixin input-clear {
+	background-color: transparent;
+    @include appearance(none);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    @include transition-primary;
+}
+
+@mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+}
+
+@mixin border-radii($topleft, $topright, $bottomright, $bottomleft) {
+	border-top-left-radius: $topleft;
+	border-top-right-radius: $topright;
+	border-bottom-right-radius: $bottomright;
+	border-bottom-left-radius: $bottomleft;
+	-webkit-border-top-left-radius: $topleft;
+	-webkit-border-top-right-radius: $topright;
+	-webkit-border-bottom-right-radius: $bottomright;
+	-webkit-border-bottom-left-radius: $bottomleft;
+	-moz-border-radius-topleft: $topleft;
+	-moz-border-radius-topright: $topright;
+	-moz-border-radius-bottomright: $bottomright;
+	-moz-border-radius-bottomleft: $bottomleft;
+}
+
+@mixin opacity($op) {
+    -khtml-opacity: $op;
+    -moz-opacity: $op;
+    opacity: $op;
+}
+
+@mixin appearance($value){
+  -moz-appearance: $value;
+  -webkit-appearance: $value;
+  appearance: $value;
+}
+
+// https://dvcs.w3.org/hg/FXTF/raw-file/tip/filters/index.html 
+//
+// grayscale      ex: filter: grayscale(100%);
+// sepia          ex: filter: sepia(100%);
+// saturate       ex: filter: saturate(0%);
+// hue-rotate     ex: filter: hue-rotate(45deg);
+// invert         ex: filter: invert(100%);
+// brightness     ex: filter: brightness(15%);
+// contrast       ex: filter: contrast(200%);
+// blur           ex: filter: blur(2px);
+
+@mixin filter($filter-type,$filter-amount) {
+  -webkit-filter: unquote($filter-type+unquote('(#{$filter-amount})'));
+  -moz-filter: unquote($filter-type+unquote('(#{$filter-amount})'));
+  -ms-filter: unquote($filter-type+unquote('(#{$filter-amount})'));
+  -o-filter: unquote($filter-type+unquote('(#{$filter-amount})'));
+  filter: unquote($filter-type+unquote('(#{$filter-amount})'));
+}
+
+
+//============================================================
+// Typography
+//============================================================
+
+// An rem font-size mixin providing fallback to px
+@mixin font-size($sizeValue: 1.4) {
+    $remValue: $sizeValue;
+    $pxValue: ($sizeValue * 10);
+    font-size: #{$pxValue}px;
+    font-size: #{$remValue}rem;
+}
+
+// Requires inline-block or block for proper styling
+@mixin text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin text-shadow($x: 2px, $y: 2px, $blur: 5px, $color: rgba(0,0,0,.4)) {
+    text-shadow: $x $y $blur $color;
+}
+
+//============================================================
+// Transforms
+//============================================================
+
+@mixin transform($arguments...) {
+    -webkit-transform: $arguments;
+      -ms-transform: $arguments; // IE9
+          transform: $arguments;
+}
+
+@mixin transform-origin($arguments...) {
+  -webkit-transform-origin: $arguments;
+      -ms-transform-origin: $arguments; // IE9
+          transform-origin: $arguments;
+}
+
+@mixin rotate($arguments...) {
+  -webkit-transform: rotate($arguments);
+      -ms-transform: rotate($arguments); // IE9
+          transform: rotate($arguments);
+}
+
+@mixin backface-visibility ($arguments) {
+  -webkit-backface-visibility: $arguments;
+     -moz-backface-visibility: $arguments;
+      -ms-backface-visibility: $arguments;
+       -o-backface-visibility: $arguments;
+          backface-visibility: $arguments;
+}
+
+@mixin scale($scale) {
+     @include transform(scale($scale));
+}
+@mixin translate ($x, $y) {
+   @include transform(translate($x, $y));
+}
+@mixin translateX ($x) {
+    @include transform(translateX($x));
+}
+@mixin translateY ($y) {
+    @include transform(translateY($y));
+}
+@mixin skew ($x, $y) {
+   @include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+@mixin translate3d($x, $y, $z) {
+  -webkit-transform: translate3d($x, $y, $z);
+     -moz-transform: translate3d($x, $y, $z);
+       -o-transform: translate3d($x, $y, $z);
+          transform: translate3d($x, $y, $z);
+}
+
+
+//============================================================
+// Animations
+//============================================================
+
+@mixin transition($arguments...) {
+    -webkit-transition: $arguments;
+            transition: $arguments;
+}
+
+@mixin animation($arguments) {
+  -webkit-animation: $arguments;
+          animation: $arguments;
+}
+
+
+@mixin transition-primary() {
+  @include transition(all, 0.25s, ease-out);
+}
+
+@mixin transition-secondary() {
+  @include transition(all, 0.8s, ease-out);
+}
+
+//============================================================
+// Gradients
+//============================================================
+
+@mixin linear-gradient ($from, $to) {
+  background-color: $from;
+  background-image: -webkit-linear-gradient(top, $from, $to); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+  background-image:         linear-gradient(to bottom, $from, $to); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+}
+
+//============================================================
+// Structure
+//============================================================
+
+@mixin box-sizing ($arguments) {
+  -webkit-box-sizing: $arguments;
+     -moz-box-sizing: $arguments;
+       -o-box-sizing: $arguments;
+          box-sizing: $arguments;
+}
+
+@mixin box-shadow($horizontal: 0px, $vertical: 1px, $blur: 2px, $color: #CCC) {
+  -webkit-box-shadow: $horizontal $vertical $blur $color;
+  -moz-box-shadow: $horizontal $vertical $blur $color;
+  box-shadow: $horizontal $vertical $blur $color;
+}
+
+
+//============================================================
+//
+// Easing
+//
+// Thanks to Robert Penner for his sterling work on easing,
+// and to Matthew Lein for converting these functions into
+// approximated cubic-bezier functions. Respect.
+//
+// @see http://robertpenner.com/
+// @see http://matthewlein.com/ceaser/
+//
+//============================================================
+
+// Cubic
+$easeInCubic     :  cubic-bezier(0.550, 0.055, 0.675, 0.190);
+$easeOutCubic    :  cubic-bezier(0.215, 0.610, 0.355, 1.000);
+$easeInOutCubic  :  cubic-bezier(0.645, 0.045, 0.355, 1.000);
+
+// Circ
+$easeInCirc      :  cubic-bezier(0.600, 0.040, 0.980, 0.335);
+$easeOutCirc     :  cubic-bezier(0.075, 0.820, 0.165, 1.000);
+$easeInOutCirc   :  cubic-bezier(0.785, 0.135, 0.150, 0.860);
+
+// Expo
+$easeInExpo      :  cubic-bezier(0.950, 0.050, 0.795, 0.035);
+$easeOutExpo     :  cubic-bezier(0.190, 1.000, 0.220, 1.000);
+$easeInOutExpo   :  cubic-bezier(1.000, 0.000, 0.000, 1.000);
+
+// Quad
+$easeInQuad      :  cubic-bezier(0.550, 0.085, 0.680, 0.530);
+$easeOutQuad     :  cubic-bezier(0.250, 0.460, 0.450, 0.940);
+$easeInOutQuad   :  cubic-bezier(0.455, 0.030, 0.515, 0.955);
+
+// Quart
+$easeInQuart     :  cubic-bezier(0.895, 0.030, 0.685, 0.220);
+$easeOutQuart    :  cubic-bezier(0.165, 0.840, 0.440, 1.000);
+$easeInOutQuart  :  cubic-bezier(0.770, 0.000, 0.175, 1.000);
+
+// Quint
+$easeInQuint     :  cubic-bezier(0.755, 0.050, 0.855, 0.060);
+$easeOutQuint    :  cubic-bezier(0.230, 1.000, 0.320, 1.000);
+$easeInOutQuint  :  cubic-bezier(0.860, 0.000, 0.070, 1.000);
+
+// Sine
+$easeInSine      :  cubic-bezier(0.470, 0.000, 0.745, 0.715);
+$easeOutSine     :  cubic-bezier(0.390, 0.575, 0.565, 1.000);
+$easeInOutSine   :  cubic-bezier(0.445, 0.050, 0.550, 0.950);
+
+// Back
+$easeInBack      :  cubic-bezier(0.600, -0.280, 0.735, 0.045);
+$easeOutBack     :  cubic-bezier(0.175,  0.885, 0.320, 1.275);
+$easeInOutBack   :  cubic-bezier(0.680, -0.550, 0.265, 1.550);

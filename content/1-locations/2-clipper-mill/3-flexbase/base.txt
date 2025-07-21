@@ -1,0 +1,56 @@
+Title: Flexbase
+
+----
+
+Price: 300
+
+----
+
+Subtitle: Unreserved Workspace
+
+----
+
+Description: 
+
+When you choose Flexbase at Clipper Mill you get all of the amenities of Homebase on your own schedule.  Choose to work by the window or work amongst your friends.  For only $295/month you can use any desk within the space that is not already reserved and stay as long as you like.  The only rule for Flexbase is that you have to take your belongings with you when you leave.
+ 
+Throughout Homebase all desk spaces are equipped with a Jarvis Standing Desk, so you can sit or stand whenever you like. Flexbase is a great option if you like to change things up in order to get work done.  You are never tied to one desk or one space and you can move about the space as you desire.
+
+----
+
+Interval: mo
+
+----
+
+Intro: Unreserved Workspace outfitted with a Jarvis Standing Desk
+
+----
+
+Contents: 
+
+----
+
+Cover: openingsoon@2x.png
+
+----
+
+Airtable: shryftJmS1sHOomkN
+
+----
+
+Features: 
+
+- 
+  featuretitle: '8am-6pm : Mon-Fri Access'
+- 
+  featuretitle: Shared Workspace
+- 
+  featuretitle: 2 Meetbase Credits /mo
+- 
+  featuretitle: '5% Off Premium Events'
+- 
+  featuretitle: '5% Off Mailbase'
+
+----
+
+Icon: user

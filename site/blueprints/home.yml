@@ -1,0 +1,57 @@
+title: Home
+
+pages: false
+
+files:
+  fields:
+    alt:
+      label: Alt
+      type: text
+    caption:
+      label: Caption
+      type: textarea
+    align:
+      label: Align
+      type: select
+      options:
+        top: Top
+        middle: Middle
+        bottom: Bottom
+
+fields:
+  title:
+    label: Title
+    type:  text
+
+  cover:
+    label: Cover
+    type: image
+
+  intro:
+    label: Intro
+    type:  textarea
+
+  texta:
+    label: Text
+    type:  textarea
+
+  textb:
+    label: Text
+    type:  textarea
+
+  sliderBlock:
+    label: Slider
+    type: headline
+
+  slideshow:
+    label: Slideshow
+    type: images
+    limit: 3
+
+  galleryBlock:
+    label: Slider
+    type: headline
+
+  gallery:
+    label: Gallery
+    type: images

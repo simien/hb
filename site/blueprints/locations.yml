@@ -1,0 +1,18 @@
+title: Locations
+
+files: false
+
+pages:
+  template: location
+
+options:
+  template: false
+  status: false
+  url: false
+
+icon: map-o
+
+fields:
+  title:
+    label: Title
+    type: title

@@ -1,0 +1,48 @@
+.hb-amenities {
+	//background-color: $color-primary;
+	padding: 8rem 2rem;
+
+	header {
+		h2 {
+			font-family: $font-secondary;
+			font-size: 3rem;
+		}
+		p {
+			font-family: $font-secondary;
+		}
+	}
+
+	>.row >.col-md-4 {
+		margin-bottom: 2rem;
+	}
+	h5{
+		color: $color-dark;
+		font-family: $font-rohn;
+		font-size: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.125rem;
+	}
+	p {
+		color: $color-gray;
+		font-size: 1rem;
+	}
+	i {
+		display: inline-block;
+		font-size: 3rem;
+		color: $color-global;
+		&.ion-ios-infinite-outline {
+			position: relative;
+			top: -10px;
+		}
+		&.ion-ios-book-outline {
+			position: relative;
+			top: -10px;
+		}
+	}
+
+	p {
+		@media(max-width: 767px) {
+			margin-bottom: 35px;
+		}
+	}
+}

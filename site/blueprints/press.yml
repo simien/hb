@@ -1,0 +1,20 @@
+title: Press
+
+files: false
+
+pages:
+  template: post
+  sort: flip
+  num: date
+
+options:
+  template: true
+  status: true
+
+icon: newspaper-o
+
+fields:
+  title:
+    label: Title
+    type: title
+    required: true

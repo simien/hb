@@ -1,0 +1,8 @@
+{
+  "name": "kirby-scheduled-pages",
+  "description": "Scheduled Pages for Kirby CMS",
+  "author": "Jens Törnell <jens.tornell@gmail.com>",
+  "version": "0.1",
+  "type": "kirby-plugin",
+  "license": "MIT"
+}

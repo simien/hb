@@ -1,0 +1,30 @@
+title: Events
+
+pages:
+  template: event
+  num: zero
+
+files: false
+
+options:
+  template: false
+  status: false
+
+icon: calendar
+
+fields:
+  title:
+    label: Title
+    type: title
+
+  cover:
+    label: Cover
+    type: image
+
+  intro:
+    label: Intro
+    type: textarea
+
+  text:
+    label: Text
+    type: textarea

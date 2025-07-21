@@ -1,0 +1,296 @@
+/* 6.4 Buttons
+----------------------------------------------------------*/
+.btn {
+    position: relative;
+    font-family: $font-rohn-b;
+    @include border-radius(0.2em);
+    padding: 0.95rem 1.25rem 0.8rem;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    @include transition(all, 0.25s, easeInSine );
+    outline: none;
+    background: transparent;
+    @include backface-visibility(hidden);
+    cursor: pointer;
+    border-width: 2px;
+
+    &:hover, &:focus, &:active, &:focus:active {
+        @include transition(all, 0.25s, easeInSine );
+        outline: none;
+        //@include translateY(-2px);
+        @include box-shadow(none);
+    }
+
+    > span {
+        position: relative;
+        z-index: 2;
+    }
+
+    i {
+        position: relative;
+        top: 1px;
+        @include opacity(0.5)
+
+        > i {
+            display: inline-block;
+            @include transition(transform 0.2s ease-out, opacity 0.2s ease-out);
+        }
+    }
+
+    img {
+        height: 1em;
+        position: relative;
+        top: -0.05em;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    @media (min-width: 992px) {
+        font-size: 1rem;
+        padding: 1rem 1.25rem 0.9rem;
+    }
+}
+
+.btn-outline-dark,
+.btn-outline-light,
+.btn-outline-secondary {
+    border-width: 2px;
+}
+
+.btn-outline-light {
+    &:hover {
+        color: $color-global;
+    }
+}
+
+
+/* Sizes */
+
+.btn-lg {
+    padding: 1rem 4rem 0.9rem;;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    @include border-radius(0.2em);
+
+    @media #{$screen-xs} {
+        font-size: 1.25rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+.btn-sm {
+    padding: 0.75rem 1.25rem 0.7rem;
+    font-size: 0.75rem;
+    @include border-radius(0.2em);
+}
+
+/* Types */
+
+$k: 1;
+@for $i from 1 through length($colorVersions)/2 {
+    $type: nth($colorVersions,$k);
+    $color: nth($colorVersions,$k+1);
+
+    &.btn-#{$type} {
+        border-color: $color;
+        background-color: $color;
+        color: #fff;
+
+        @if $type == "secondary" {
+            color: $color-global;
+        } @else {
+            color: #fff;
+        }
+
+        &:hover, &:focus, &:active, &:focus:active {
+            @if $type == "secondary" {
+                $color: $color-primary;
+            }
+
+            border-color: shade($color,10%);
+            background-color: shade($color,10%);
+            color: #fff;
+        }
+    }
+    $k: $k+2;
+}
+
+.btn-white {
+    background-color: #fff;
+    border-color: #fff;
+    color: $color-global;
+
+    &:hover, &:focus, &:active, &:focus:active {
+        background-color: $color-primary;
+        border-color: $color-primary;
+        color: #fff;
+    }
+}
+
+.btn-link {
+    color: inherit;
+
+     &:hover, &:focus, &:active, &:focus:active {
+        color: $color-primary;
+        text-decoration: none;
+    }
+}
+
+$k: 1;
+@for $i from 1 through length($colorVersions)/2 {
+    $type: nth($colorVersions,$k);
+    $color: nth($colorVersions,$k+1);
+
+    &.btn-outline-#{$type} {
+        border-color: $color;
+        color: inherit;
+
+        &:before {
+            background-color: $color;
+        }
+
+        &:hover, &:focus, &:active, &:focus:active {
+            @if $type == "secondary" {
+                color: $color-dark;
+            } @else {
+                color: #fff;
+            }
+            border-color: $color;
+            background-color: $color;
+        }
+    }
+    $k: $k+2;
+}
+
+.btn-outline-dark {
+    color: $color-dark;
+}
+
+/* Submit Button */
+
+.btn-submit {
+
+    .description {
+        @include transition-primary;
+    }
+
+    .success, .error {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        visibility: hidden;
+        @include transition-primary;
+    }
+
+    .success {
+        top: 0;
+        bottom: 0;
+    }
+
+    svg {
+        position: absolute;
+        top: calc(50% - 1.25rem);
+        left: calc(50% - 1.25rem);
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    &.loading {
+        -webkit-pointer-events: none;
+        pointer-events: none;
+    }
+
+    &.success, &.error {
+        .description {
+            visibility: hidden;
+            @include opacity(0);
+        }
+    }
+
+    &.success {
+        .success {
+            @include opacity(1);
+            visibility: visible;
+
+            > svg > path {
+                stroke-dashoffset: 0;
+                @include transition(all 0.3s ease-out 0.25s);
+            }
+        }
+    }
+
+    &.error {
+        background-color: $color-medium;
+        border-color: $color-medium;
+
+        .error {
+            @include opacity(1);
+            visibility: visible;
+        }
+    }
+}
+
+/* Play Button */
+
+.btn-play {
+    @include button-clear;
+    position: relative;
+    display: inline-block;
+    font-size: 52px;
+    width: 92px;
+    height: 92px;
+    vertical-align: middle;
+    @include border-radius(50%);
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        @include border-radius(50%);
+        background-color: #fff;
+        @include transition-secondary;
+        @include box-shadow(0 0 45px 0 rgba(#000,0.1));
+        content: ' ';
+    }
+
+    &:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include translate3d(-50%,-50%,0);
+        border-style: solid;
+        border-width: 8px 0 8px 14px;
+        border-color: transparent transparent transparent $color-global;
+        content: ' ';
+        @include transition-primary;
+    }
+
+    &:hover, &:focus, &:active, &:focus:active {
+        outline: none;
+
+        &:before {
+            @include scale(1.3);
+            @include opacity(1);
+            visibility: visible;
+        }
+        &:after {
+            border-color: transparent transparent transparent $color-primary;
+        }
+    }
+}
+
+.btn-primary:hover {
+    background-color: darken($color-primary, 5%);
+    border-color: darken($color-primary, 10%);
+}
+
+.btn-reserve {
+  background-color: $color-bkgd;
+  &:hover {
+    background-color: $color-dark;
+  }
+}

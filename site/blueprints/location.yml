@@ -1,0 +1,129 @@
+title: Location
+
+files:
+  sortable: true
+  fields:
+    alt:
+      label: Alt
+      type: text
+    caption:
+      label: Caption
+      type: textarea
+    align:
+      label: Align
+      type: select
+      options:
+        top: Top
+        middle: Middle
+        bottom: Bottom
+
+pages:
+  template: base
+
+fields:
+  prevnext: prevnext
+
+  locationBlock:
+    label: Description
+    type: headline
+
+  title:
+    label: Title
+    type:  text
+
+  intro:
+    label: Intro
+    type:  text
+    width: 2/3
+
+  cover:
+    label: Cover Image
+    type: image
+    width: 1/3
+
+  description:
+    label: Description
+    type:  textarea
+
+  contactBlock:
+    label: Contact
+    type: headline
+
+  phone:
+    label: Phone
+    type:  tel
+    width: 1/2
+
+  email:
+    label: Email
+    type:  text
+    width: 1/2
+
+  addressBlock:
+    label: Address
+    type: headline
+
+  street:
+    label: Street
+    type: text
+    width: 1/2
+
+  suite:
+    label: Suite
+    type: text
+    width: 1/2
+
+  city:
+    label: City
+    type: text
+    width: 1/3
+
+  state:
+    label: State
+    type: text
+    width: 1/3
+
+  zip:
+    label: Zip
+    type: text
+    width: 1/3
+
+  lat:
+    label: Latitude
+    type:  text
+    width: 1/2
+
+  long:
+    label: Longitude
+    type:  text
+    width: 1/2
+
+  sliderBlock:
+    label: Gallery
+    type: headline
+
+  slideshow:
+    label: Slideshow
+    type: images
+
+  featureBlock:
+    label: Features
+    type: headline
+
+  features:
+    label: Features
+    type: structure
+    style: table
+    entry:
+      - featuretitle
+      - featuredesc
+    fields:
+      featuretitle:
+        label: Title
+        type: text
+      featuredesc:
+        label: Subtitle
+        type: text
+      featureicon:
+        label: Icon
+        type: text

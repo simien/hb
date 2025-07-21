@@ -1,0 +1,208 @@
+.bookingjs {
+	border: none !important;
+	box-shadow: 0 0 25px $color-w-t-2 !important;
+	min-height: 150px !important;
+	margin: 0 auto;
+	z-index: 9 !important;
+	background-color: $color-light !important;
+}
+
+.fc table{
+	font-size: 1.003em;
+}
+
+.fc-unthemed .fc-basic-view .fc-scroller {
+    margin: 0 3rem;
+}
+
+.fc-view-container {
+	background-color: $color-light !important;
+}
+
+.bookingjs-bookpage {
+	//background-color: $color-hb-book-bkgd !important;
+	border: 2px solid $color-global;
+}
+
+.fc-unthemed td.fc-today {
+	background-color: $color-hb-book-light;
+}
+
+.fc-unthemed .fc-list-heading td {
+	color: #222222 !important;
+	font-weight: 600 !important;
+	letter-spacing: -0.02em;
+	padding: 1rem 2.5rem 1rem !important;
+}
+
+.fc-unthemed .fc-list-heading td .fc-list-heading-alt{
+	color: $color-contrast !important;
+	font-weight: 400 !important;
+	letter-spacing: 0
+}
+
+.fc-time-grid .fc-bgevent, .fc-time-grid .fc-event{
+	border-left: 3px solid $color-b-t-5 !important;
+}
+
+.fc-list-item:hover, .fc-event-clicked, .fc-event:hover{
+	border-left: 3px solid $color-dark !important;
+	color: $color-contrast !important;
+}
+
+.fc-ltr .fc-list-heading-main {
+	font-size: 1em !important;
+	text-transform: uppercase;  
+}
+
+.fc-list-item .fc-list-item-time {
+	font-size: 1.3em !important;
+	color: $color-contrast !important;
+}
+
+.fc-day-grid-event .fc-time, .fc-time-grid-event .fc-time{
+	font-family: $font-primary;
+	font-size: 1rem !important;
+	font-weight: 400;
+	line-height: 1.5;
+	color: $color-dark;
+
+	@media(max-width: 767px) {
+		font-size: 1.2em;
+		line-height: 2;
+	}
+
+}
+
+.fc-day-grid-event {
+	padding: 0.5rem 1.5rem 0.5rem !important;
+}
+
+.fc-axis,
+.fc-row.fc-widget-header .fc-day-header{
+	color: $color-dark !important;
+	fill: $color-dark !important;
+	font-size: 0.9em;
+	font-weight: 600;
+	text-shadow: $txtsd-light;
+}
+
+.bookingjs-poweredby a,
+.bookingjs-poweredby a svg path{
+	color: $color-contrast !important;
+	fill: $color-contrast !important;
+	font-size: 0.9em;
+	font-weight: 600;
+	text-shadow: $txtsd-light;
+}
+
+.fc-time-grid .fc-slats td.fc-axis,
+.fc-time-grid .fc-slats td,
+.fc-unthemed .fc-divider, 
+.fc-unthemed .fc-popover, 
+.fc-unthemed .fc-row, 
+.fc-unthemed tbody, 
+.fc-unthemed td,  
+.fc-unthemed thead,
+.fc .fc-toolbar,
+.bookingjs-timezonehelper {
+    border-color: $color-b-t-05 !important;
+}
+
+.bookingjs-avatar{
+	display: none
+}
+
+.bookingjs-displayname {
+	color: $color-dark;
+}
+
+.bookingjs.has-avatar{
+	margin-top: 20px !important;
+}
+
+.bookingjs-form-button{
+	background-color: $color-dark !important;
+	border: none !important;
+	box-shadow: none !important;
+	padding: 9px 25px !important;
+	font-family: $font-rohn;
+	font-size: 1.25em !important;
+	letter-spacing: $ltrspc-md;
+	color: $color-light !important
+}
+.bookingjs-form-button:hover{
+	background-color: $color-contrast !important;
+	color: $color-light !important
+}
+
+.bookingjs-bookpage-date, .bookingjs-bookpage h2 {
+	color: $color-dark;
+	font-size: 38px;
+	font-weight: 700 !important;
+	text-shadow: $txtsd-light;
+	letter-spacing: 0;
+}
+
+.bookingjs-form-input, .bookingjs-form input, .bookingjs-form input:invalid textarea, .bookingjs-form textarea:invalid{
+	font-size: 1.25em !important;
+	padding: 20px 25px 5px !important;
+}
+
+.bookingjs-form-field--dirty .bookingjs-form-label{
+	top: 12px !important;
+	color: $color-gray !important;
+}
+
+.bookingjs-bookpage-time, .bookingjs-bookpage h3{
+	margin-bottom: 25px !important;
+}
+
+.fc-unthemed th, .bookingjs-timezonehelper, .fc-row.fc-widget-header .fc-day-header{
+	color: $color-global !important;
+	text-shadow: $txtsd-light;
+	font-family: $font-rohn;
+	font-size: 1em !important;
+	text-transform: uppercase;
+	text-shadow: $txtsd-lg;
+	letter-spacing: 0.1rem;
+	background-color: $color-hb-book-dark !important;
+	padding: 8px 0 5px;
+	@media(min-width: 576px) {
+		font-size: 1.125em !important;
+	}
+	@media(min-width: 991px) {
+		font-size: 1.31em !important;
+	}
+}
+
+.bookingjs-timezonehelper{
+	color: $color-gray;
+	font-family: $font-rohn;
+	font-size: 0.75rem !important;
+	letter-spacing: $ltrspc-md;
+}
+
+.fc .fc-toolbar>*>button{
+	opacity: 1;
+	background-color: $color-hb-book-bkgd !important;
+	//margin-bottom: 5px;
+	margin-left: 5px;
+	.fc-icon:after{
+		color: $color-dark;
+	}
+}
+
+.fc .fc-toolbar>.fc-right>button.fc-today-button{
+	color: $color-dark;
+	font-weight: 700;
+	padding: 15px;
+}
+
+.bookingjs-timezoneicon {
+	display: none;
+}
+
+.bookingjs-poweredby {
+	padding: 0 10px 50px !important;
+}

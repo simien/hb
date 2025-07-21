@@ -1,0 +1,71 @@
+Title: Flexbase
+
+----
+
+Price: 300
+
+----
+
+Subtitle: Unreserved Workspace
+
+----
+
+Description: 
+
+When you choose Flexbase at 300 W. Pratt you get all of the amenities of Homebase on your own schedule.  Choose to work by the window or work amongst your friends.  For an affordable rate you can use any desk within the space that is not already reserved and stay as long as you like.  The only rule for Flexbase is that you have to take your belongings with you when you leave.
+
+Throughout Homebase all desk spaces are equipped with a Jarvis Standing Desk, so you can sit or stand whenever you like. Flexbase is a great option if you like to change things up in order to get work done.  You are never tied to one desk or one space and you can move about the space as you desire.
+
+**Who needs Flexbase?**
+Flexbase offers a variety of solutions and can help anyone accomplish even their biggest to-do lists.
+- Solopreneurs who travel a lot but need a location to call home where they know they can get down to business whenever they are back in town.
+- Remote workers who need a change of scenery from their home office can use Flexbase as an occasional getaway.
+- Corporate employees working on location can use Flexbase to provide structure for their workday outside of their hotel room walls.
+
+Flexbase offers more perks than just a great place to work!
+- Work at any open workspace throughout Homebase
+- An official shared address at 300 W Pratt St.
+- 2 Meetbase Credits per month- Use a bigger room when you need it!
+- 5% off of Premium Events
+- 5% off of Mailbase
+
+Message us today to answer your questions about Flexbase or reserve your Flexbase membership today for 300 W. Pratt!
+
+----
+
+Interval: mo
+
+----
+
+Intro: Unreserved Workspace outfitted with a Jarvis Standing Desk
+
+----
+
+Contents: 
+
+----
+
+Cover: homebase-prattst-14.jpg
+
+----
+
+Airtable: shrLeoGepSD6noMZT
+
+----
+
+Features: 
+
+- 
+  featuretitle: '8am-6pm : Mon-Fri Access'
+- 
+  featuretitle: Shared Workspace
+- 
+  featuretitle: 2 Meetbase Credits /mo
+- 
+  featuretitle: '5% Off Premium Events'
+- 
+  featuretitle: '5% Off Mailbase'
+
+----
+
+Icon: user

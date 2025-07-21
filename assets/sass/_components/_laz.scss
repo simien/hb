@@ -1,0 +1,74 @@
+.parkingwidget {
+	width: 100%;
+	#WidgetFaceDiv {
+		width: 95% !important;
+		background-color: transparent !important;
+		border: none !important;
+		> #LAZ_TopDiv {
+			padding-top: 5px !important;
+		}
+		> #LAZ_Locations {
+			padding-top: 40px !important;
+		}
+	}
+	> #LAZ_WidgetHeader  {
+		display: none;
+	}
+
+	input#btnGetRate.laz-ff-getRatesButton {
+		width: 95% !important;
+		color: $color-global !important;
+		background: transparent !important;
+		font-family: $font-rohn-b !important;
+		font-size: 1rem !important;
+		letter-spacing: 0.1rem;
+		text-transform: uppercase;
+		padding: 0.95rem 0.5rem 0.8rem !important;
+		margin-top: 2rem !important;
+		outline: none;
+		cursor: pointer;
+		border: 2px solid $color-global !important;
+
+		@include backface-visibility(hidden);
+		@include border-radius(0.2em);
+		@include transition(all, 0.25s, easeInSine );
+
+		&:hover, &:focus, &:active, &:focus:active {
+			color: $color-light !important;
+			background: $color-global !important;
+			@include border-radius(0.2em);
+		    @include transition(all, 0.25s, easeInSine );
+		    outline: none;
+		    @include box-shadow(none);
+		}
+
+		> span {
+		    position: relative;
+		    z-index: 2;
+		}
+
+		i {
+		    position: relative;
+		    top: 1px;
+		    @include opacity(0.5)
+
+		    > i {
+		        display: inline-block;
+		        @include transition(transform 0.2s ease-out, opacity 0.2s ease-out);
+		    }
+		}
+
+		img {
+		    height: 1em;
+		    position: relative;
+		    top: -0.05em;
+		    display: inline-block;
+		    vertical-align: middle;
+		}
+		@media (min-width: 992px) {
+		    font-size: 1rem;
+		    padding: 1rem 1.25rem 0.9rem;
+		}
+		
+	}
+}

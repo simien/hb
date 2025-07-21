@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  web:
+    build: .
+    container_name: kirby2-web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+      # - KIRBY_LICENSE_KEY=your-kirby-license-key
+      # - MAILGUN_KEY=your-mailgun-key
+      # - MAILGUN_DOMAIN=your-mailgun-domain
+    command: ["/bin/bash", "-c", "chown -R www-data:www-data /var/www/html/content /var/www/html/site && apache2-foreground"]

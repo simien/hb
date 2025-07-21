@@ -1,0 +1,209 @@
+// SASS Variables
+
+// Fonts
+// -----------------------------------------
+
+$font-primary: 'Heebo', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-secondary: 'Merriweather', "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif;
+$font-helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-rohn: "RohnRounded-Medium", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-rohn-l: "RohnRounded-light", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-rohn-b: "RohnRounded-bold", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+
+// Colors
+// -----------------------------------------
+
+$color-primary: #FDB813 !default;
+$color-secondary: #f5f7f7;
+$color-light: #fefefe;
+$color-dark: #202124;
+
+$color-global: #343840;
+$color-muted: #8e9193; 
+$color-muted-light: rgba(255,255,255,0.5);  
+
+$color-red: #e15757;
+$color-blue: #56aee5;
+$color-orange: #ec9744;
+$color-green: #6BB268;
+$color-gold: #ebd072;
+$color-medium: #bdc3c4;
+
+$color-bkgd: #f6f5f1;
+$color-contrast: #050505;
+$color-grayish: #555;
+$color-gray: #777;
+$color-grayer: #888;
+$color-grayest: #999;
+$color-faint: #eee;
+$color-fainter: #e5e5e5;
+$color-md: #ccc;
+$color-tan: #ffeeba;
+$color-mute: #f6f5f1;
+$color-border: #e9e9e9;
+
+// Colors - Transparent
+$color-primary-t-1: rgba(253,184,19,0.1);
+$color-primary-t-2: rgba(253,184,19,0.2);
+$color-primary-t-3: rgba(253,184,19,0.3);
+$color-primary-t-4: rgba(253,184,19,0.4);
+$color-primary-t-5: rgba(253,184,19,0.5);
+$color-primary-t-6: rgba(253,184,19,0.6);
+$color-primary-t-7: rgba(253,184,19,0.7);
+$color-primary-t-75: rgba(253,184,19,0.75);
+$color-primary-t-8: rgba(253,184,19,0.8);
+$color-primary-t-85: rgba(253,184,19,0.85);
+$color-primary-t-9: rgba(253,184,19,0.9);
+$color-b-t-05: rgba(0, 0, 0, 0.05);
+$color-b-t-1: rgba(0, 0, 0, 0.1);
+$color-b-t-2: rgba(0, 0, 0, 0.2);
+$color-b-t-3: rgba(0, 0, 0, 0.3);
+$color-b-t-4: rgba(0, 0, 0, 0.4);
+$color-b-t-5: rgba(0, 0, 0, 0.5);
+$color-b-t-6: rgba(0, 0, 0, 0.6);
+$color-b-t-7: rgba(0, 0, 0, 0.7);
+$color-b-t-8: rgba(0, 0, 0, 0.8);
+$color-b-t-9: rgba(0, 0, 0, 0.9);
+$color-w-t-1: rgba(255, 255, 255, 0.1);
+$color-w-t-2: rgba(255, 255, 255, 0.2);
+$color-w-t-3: rgba(255, 255, 255, 0.3);
+$color-w-t-4: rgba(255, 255, 255, 0.4);
+$color-w-t-5: rgba(255, 255, 255, 0.5);
+$color-w-t-6: rgba(255, 255, 255, 0.6);
+$color-w-t-7: rgba(255, 255, 255, 0.7);
+$color-w-t-8: rgba(255, 255, 255, 0.8);
+$color-w-t-9: rgba(255, 255, 255, 0.9);
+
+// Colors - Social 
+$color-facebook: #213553;
+$color-twitter: #3aa8db;
+$color-google: #d04f3e;
+$color-behance: #1882ff;
+$color-dribbble: #e95aae;
+$color-flickr: #f9429c;
+$color-instagram: #4f86ac;
+$color-linkedin: #008bc2;
+$color-pinterest: #cb1f24;
+$color-skype: #00bef4;
+$color-slack: #44ba97;
+$color-tumblr: #435971;
+$color-vimeo: #0bc4ef;
+$color-vine: #00be9b;
+$color-youtube: #ed4533;
+
+// Colors - Lines
+$color-line: darken(desaturate(adjust-hue($color-light, 14.2857), 12.9870), 7.4510);
+$color-line-light: rgba(255,255,255,0.15);
+
+$color-hb-book-bkgd: $color-bkgd;
+$color-hb-book-dark: $color-bkgd;
+$color-hb-book-light: $color-fainter;
+
+$txtsd-dark: 0 0 2px $color-b-t-1;
+$txtsd-dark-lg: 0 0 15px $color-b-t-2;
+$txtsd-contrast: 0 0 2px $color-b-t-8;
+$txtsd-light: 0 0 1px $color-w-t-7;
+$txtsd-lg: 0 0 5px $color-w-t-9;
+
+$ltrspc-reset: 0;
+$ltrspc-nav: 0.085em;
+$ltrspc-sm: 0.0325em;
+$ltrspc-md: 0.075em;
+$ltrspc-lg: 0.25em;
+$ltrspc-neg: -0.0125em;
+
+$header-horizontal-height: 60px;
+$navigation-mobile-height: 50px;
+
+// Media Queries
+// -----------------------------------------
+
+$screen-xl: "only screen and (max-width: 1500px)";
+$screen-lg: "only screen and (max-width: 1199px)";
+$screen-md: "only screen and (max-width: 991px)";
+$screen-sm: "only screen and (max-width: 767px)";
+$screen-xs: "only screen and (max-width: 575px)";
+
+$screen-height-sm: "only screen and (max-height: 500px)";
+
+// Arrays
+// -----------------------------------------
+
+$socialBrands:
+	"facebook", $color-facebook,
+	"twitter", $color-twitter,
+	"google", $color-google,
+	"behance", $color-behance,
+	"dribbble", $color-dribbble,
+	"flickr", $color-flickr,
+	"instagram", $color-instagram,
+	"linkedin", $color-linkedin,
+	"pinterest", $color-pinterest,
+	"skype", $color-skype,
+	"slack", $color-slack,
+	"tumblr", $color-tumblr,
+	"vimeo", $color-vimeo,
+	"vine", $color-vine,
+	"youtube", $color-youtube;
+
+$colorVersions:
+    "primary", $color-primary,
+	"secondary", $color-secondary,
+	"info", $color-blue,
+	"warning", $color-orange,
+	"danger", $color-red,
+	"success", $color-green,
+	"dark", $color-dark;
+
+$ease-in-quad: cubic-bezier(.55, .085, .68, .53);
+$ease-in-cubic: cubic-bezier(.550, .055, .675, .19);
+$ease-in-quart: cubic-bezier(.895, .03, .685, .22);
+$ease-in-quint: cubic-bezier(.755, .05, .855, .06);
+$ease-in-expo: cubic-bezier(.95, .05, .795, .035);
+$ease-in-circ: cubic-bezier(.6, .04, .98, .335);
+
+$ease-out-quad: cubic-bezier(.25, .46, .45, .94);
+$ease-out-cubic: cubic-bezier(.215, .61, .355, 1);
+$ease-out-quart: cubic-bezier(.165, .84, .44, 1);
+$ease-out-quint: cubic-bezier(.23, 1, .32, 1);
+$ease-out-expo: cubic-bezier(.19, 1, .22, 1);
+$ease-out-circ: cubic-bezier(.075, .82, .165, 1);
+
+$ease-in-out-quad: cubic-bezier(.455, .03, .515, .955);
+$ease-in-out-cubic: cubic-bezier(.645, .045, .355, 1);
+$ease-in-out-quart: cubic-bezier(.77, 0, .175, 1);
+$ease-in-out-quint: cubic-bezier(.86, 0, .07, 1);
+$ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
+$ease-in-out-circ: cubic-bezier(.785, .135, .15, .86);
+
+$prefix:'-moz-', '-webkit-', '-o-', '-ms-', '';
+// ********************
+// fadeIn
+// ********************
+@mixin keyframe-fadeIn {
+  0%   { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@-webkit-keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@-o-keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@-ms-keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@keyframes fadeIn {
+  @include keyframe-fadeIn;
+}
+@mixin fadeIn( $arg ) {
+  $keyframe-name:fadeIn;
+  $duration:$arg;
+  @each $p in $prefix {
+    #{$p}animation:$keyframe-name $duration;
+  }
+}
+// e.g. @include fadeIn( 2s );

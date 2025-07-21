@@ -1,0 +1,215 @@
+// Colors
+
+$black:        hsl(0, 0%, 4%) !default
+$black-bis:    hsl(0, 0%, 7%) !default
+$black-ter:    hsl(0, 0%, 14%) !default
+
+$grey-darker:  hsl(0, 0%, 21%) !default
+$grey-dark:    hsl(0, 0%, 29%) !default
+$grey:         hsl(0, 0%, 48%) !default
+$grey-light:   hsl(0, 0%, 71%) !default
+$grey-lighter: hsl(0, 0%, 86%) !default
+
+$white-ter:    hsl(0, 0%, 96%) !default
+$white-bis:    hsl(0, 0%, 98%) !default
+$white:        hsl(0, 0%, 100%) !default
+
+$orange:       hsl(14,  100%, 53%) !default
+$yellow:       hsl(48,  100%, 67%) !default
+$green:        hsl(141, 71%,  48%) !default
+$turquoise:    hsl(171, 100%, 41%) !default
+$cyan:         hsl(204, 86%,  53%) !default
+$blue:         hsl(217, 71%,  53%) !default
+$purple:       hsl(271, 100%, 71%) !default
+$red:          hsl(348, 100%, 61%) !default
+
+// Core colors
+
+$primary-color: #FDB813 !default;
+
+$color-primary-t-1: rgba(253,184,19,0.1);
+$color-primary-t-2: rgba(253,184,19,0.2);
+$color-primary-t-3: rgba(253,184,19,0.3);
+$color-primary-t-4: rgba(253,184,19,0.4);
+$color-primary-t-5: rgba(253,184,19,0.5);
+$color-primary-t-6: rgba(253,184,19,0.6);
+$color-primary-t-7: rgba(253,184,19,0.7);
+$color-primary-t-75: rgba(253,184,19,0.75);
+$color-primary-t-8: rgba(253,184,19,0.8);
+$color-primary-t-85: rgba(253,184,19,0.85);
+$color-primary-t-9: rgba(253,184,19,0.9);
+$color-b-t-05: rgba(0, 0, 0, 0.05);
+$color-b-t-1: rgba(0, 0, 0, 0.1);
+$color-b-t-2: rgba(0, 0, 0, 0.2);
+$color-b-t-3: rgba(0, 0, 0, 0.3);
+$color-b-t-4: rgba(0, 0, 0, 0.4);
+$color-b-t-5: rgba(0, 0, 0, 0.5);
+$color-b-t-6: rgba(0, 0, 0, 0.6);
+$color-b-t-7: rgba(0, 0, 0, 0.7);
+$color-b-t-8: rgba(0, 0, 0, 0.8);
+$color-b-t-9: rgba(0, 0, 0, 0.9);
+$color-w-t-1: rgba(255, 255, 255, 0.1);
+$color-w-t-2: rgba(255, 255, 255, 0.2);
+$color-w-t-3: rgba(255, 255, 255, 0.3);
+$color-w-t-4: rgba(255, 255, 255, 0.4);
+$color-w-t-5: rgba(255, 255, 255, 0.5);
+$color-w-t-6: rgba(255, 255, 255, 0.6);
+$color-w-t-7: rgba(255, 255, 255, 0.7);
+$color-w-t-8: rgba(255, 255, 255, 0.8);
+$color-w-t-9: rgba(255, 255, 255, 0.9);
+
+$primary: $primary-color !default
+
+$info: $cyan !default
+$success: $green !default
+$warning: $yellow !default
+$danger: $red !default
+
+$light: $white-ter !default
+$dark: $grey-darker !default
+
+// Invert colors
+
+$orange-invert: findColorInvert($orange) !default
+$yellow-invert: findColorInvert($yellow) !default
+$green-invert: findColorInvert($green) !default
+$turquoise-invert: findColorInvert($turquoise) !default
+$cyan-invert: findColorInvert($cyan) !default
+$blue-invert: findColorInvert($blue) !default
+$purple-invert: findColorInvert($purple) !default
+$red-invert: findColorInvert($red) !default
+
+$primary-invert: $turquoise-invert !default
+$info-invert: $cyan-invert !default
+$success-invert: $green-invert !default
+$warning-invert: $yellow-invert !default
+$danger-invert: $red-invert !default
+$light-invert: $dark !default
+$dark-invert: $light !default
+
+// General colors
+
+$background: $white-ter !default
+
+$border: $grey-lighter !default
+$border-hover: $grey-light !default
+
+// Text colors
+
+$text: $grey-dark !default
+$text-invert: findColorInvert($text) !default
+$text-light: $grey !default
+$text-strong: $grey-darker !default
+
+// Code colors
+
+$code: $red !default
+$code-background: $background !default
+
+$pre: $text !default
+$pre-background: $background !default
+
+// Link colors
+
+$link: $blue !default
+$link-invert: $blue-invert !default
+$link-visited: $purple !default
+
+$link-hover: $grey-darker !default
+$link-hover-border: $grey-light !default
+
+$link-focus: $grey-darker !default
+$link-focus-border: $blue !default
+
+$link-active: $grey-darker !default
+$link-active-border: $grey-dark !default
+
+$global-background: #FFF !default;
+$global-secondary-background: #222 !default;
+$global-primary-background: $primary !default;
+$global-link-color: $primary;
+
+// Typography
+
+$family-primary: 'RohnRounded-Medium', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$family-sans-serif: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default
+$family-serif: 'Merriweather', "Hoefler Text", "Baskerville Old Face", Garamond, "Times New Roman", serif !default
+$family-monospace: monospace !default
+$render-mode: optimizeLegibility !default
+
+$rohn-r: 'RohnRounded-regular', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$rohn-m: 'RohnRounded-medium', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+$rohn-b: 'RohnRounded-bold', BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default;
+
+$size-1: 3rem !default
+$size-2: 2.5rem !default
+$size-3: 2rem !default
+$size-4: 1.5rem !default
+$size-5: 1.25rem !default
+$size-6: 1rem !default
+$size-7: 0.875rem !default
+
+$weight-light: 300 !default
+$weight-normal: 400 !default
+$weight-medium: 500 !default
+$weight-semibold: 600 !default
+$weight-bold: 700 !default
+
+// Responsiveness
+
+// The container horizontal gap, which acts as the offset for breakpoints
+$gap: 32px !default
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 769px !default
+// 960px container + 4rem
+$desktop: 960px + (2 * $gap) !default
+// 1152px container + 4rem
+$widescreen: 1152px + (2 * $gap) !default
+// 1344px container + 4rem
+$fullhd: 1344px + (2 * $gap) !default
+
+// Miscellaneous
+
+$easing: ease-out !default
+$radius-small: 2px !default
+$radius: 3px !default
+$radius-large: 5px !default
+$radius-rounded: 290486px !default
+$speed: 86ms !default
+
+// Flags
+
+$variable-columns: true !default
+
+// Typography
+
+$family-primary: $family-sans-serif !default
+$family-code: $family-monospace !default
+
+$size-small: 0.875rem !default
+$size-normal: $size-6 !default
+$size-medium: $size-5 !default
+$size-large: $size-4 !default
+
+$spacing-invert: -0.05rem !default
+$spacing-small: 0.05rem !default
+$spacing-medium: 0.1rem !default
+$spacing-large: 0.25rem !default
+
+// Lists and maps
+
+$colors: ("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert), "link": ($link, $link-invert), "info": ($info, $info-invert), "success": ($success, $success-invert), "warning": ($warning, $warning-invert), "danger": ($danger, $danger-invert)) !default
+$shades: ("black-bis": $black-bis, "black-ter": $black-ter, "grey-darker": $grey-darker, "grey-dark": $grey-dark, "grey": $grey, "grey-light": $grey-light, "grey-lighter": $grey-lighter, "white-ter": $white-ter, "white-bis": $white-bis) !default
+
+$sizes: $size-1 $size-2 $size-3 $size-4 $size-5 $size-6 $size-7 !default
+
+$ka-cookie-bg: $color-w-t-7 !default;
+$ka-cookie-color: $grey !default;
+$ka-cookie-link-color: $grey-dark !default;
+$ka-cookie-link-color-hover: $grey-darker !default;
+$ka-cookie-btn-bg: $grey-darker !default;
+$ka-cookie-btn-color: $black !default;
+$ka-cookie-position: bottom-left !default; // top-left, top-right, bottom-left, bottom-right
+
+$overlay-default-background: rgba($global-background, 0.5) !default;
+$overlay-primary-background: rgba($global-secondary-background, 0.5) !default;

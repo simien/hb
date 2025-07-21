@@ -1,0 +1,313 @@
+.hb-page-topper{
+	height: 200px;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	border-bottom: 2px solid $color-light;
+	@media(min-width: 768px) {
+		height: 450px;
+	}
+
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		background: $color-primary-t-9;
+	}
+	.container {
+		position: relative;
+		z-index: 1;
+		top: 30%;
+		text-align: center;
+		@media(max-width: 767px) {
+			top: 15%;
+		}
+	}
+	h1.hb-page-title {
+		width: 80%;
+		color: $color-light;
+		line-height: 1.5;
+		text-shadow: $txtsd-dark;
+		font-size: 1.5rem;
+		line-height: 2.25rem;
+		letter-spacing: 0;
+		margin-bottom: 0;
+		@media (min-width: 768px) {
+			font-size: 2.75rem;
+			line-height: 3.75rem;
+		}
+	}
+}
+
+.hb-page {
+	background: $color-bkgd;
+	margin-bottom: -100px;
+
+	>.container {
+		padding: 4rem;
+		background: $color-light;
+		position: relative;
+		top: -150px;
+		border-top: 2px solid $color-global;
+		box-shadow: 0 0 4px $color-b-t-1;
+		@media(min-width: 1200px) {
+			width: 900px;
+		}
+		@media(max-width: 991px) {
+			padding: 30px 50px 50px;
+		}
+		@media(max-width: 767px) {
+			padding: 20px 20px 50px;
+			top: -100px;
+		}
+	}
+	.hb-page-content {
+		margin-top: 2rem;
+		p {
+			font-size: 1rem;
+		}
+		a {
+			@extend a.hb-link;
+		}
+	}
+}
+.hb-page-comments {
+	padding: 100px 0 0;
+	border-top: 1px solid $color-faint;
+}
+
+.hb-page-header {
+  margin-top: 0;
+}
+
+.hb-page-author {
+  display: inline-block;
+
+  img {
+	border-radius: 100%;
+	width: 55px;
+	margin-right: 17px;
+	position: relative;
+	top: -2px;
+  }
+
+  span {
+	color: #333;
+  }
+}
+
+.hb-page-date {
+  display: inline-block;
+  margin-left: 35px;
+  color: #888;
+
+  @media(max-width: 767px) {
+	margin-left: 15px;
+  }
+
+  span {
+	color: #333;
+  }
+}
+
+.hb-page-share {
+	position: relative;
+	top: -0.65rem;
+  float: right;
+  color: #888;
+
+  @media(max-width: 767px) {
+		float: right;
+  }
+
+  a {
+		margin-left: 13px;
+		position: relative;
+		top: 3px;
+		text-decoration: none;
+  }
+
+  i {
+	font-size: 1.5rem;
+
+		&.ion-social-twitter,
+		&.ion-social-facebook,
+		&.ion-social-buffer,
+		&.ion-social-google {
+		  color: $color-dark;
+		}
+		&:hover{
+			color: $color-primary;
+		}
+  }
+}
+
+.hb-page-content {
+  margin-top: 50px;
+
+  @media(max-width: 767px) {
+	margin-top: 30px;
+  }
+
+  h1, h2, h3, h4, h5 {
+	margin: 0;
+	padding: 1rem 0 2rem;
+  }
+
+  p {
+	font-size: 16px;
+	color: $color-global;
+	line-height: 29px;
+	margin-bottom: 20px;
+
+	@media(max-width: 991px) {
+	  font-size: 14px;
+	}
+  }
+
+  .hb-page-video {
+	margin: 40px 0;
+
+	iframe {
+	  width: 92%;
+	  display: block;
+	  margin: 0 auto;
+
+	  @media(max-width: 991px) {
+		height: 350px;
+	  }
+
+	  @media(max-width: 767px) {
+		width: 100%;
+		height: 270px;
+	  }
+	}
+  }
+
+  .hb-page-gallery {
+	margin: 45px -20px;
+
+	@media(max-width: 991px) {
+	  margin: 45px 0;
+	}
+
+	img {
+	  @media(max-width: 767px) {
+		margin-top: 20px !important;
+	  }
+	}
+
+	.zoomerang {
+	  display: block;
+	}
+  }
+
+  .hb-page-quote-wrapper {
+	margin: 60px 0;
+	position: relative;
+
+	&:before {
+	  content: '';
+	  position: absolute;
+	  left: -25px;
+	  width: 3px;
+	  height: 100%;
+	  background: #e1e5ea;
+	}
+
+	.quote {
+	  font-family: $font-secondary;
+	  color: #444;
+	  font-style: italic;
+	  font-size: 21px;
+	  line-height: 32px;
+	  width: 95%;
+
+	  @media(max-width: 767px) {
+		font-size: 18px;
+		width: 100%;
+	  }
+	}
+
+	.author {
+	  margin-top: 15px;
+	  font-size: 15px;
+	  color: #9097a0;
+	  padding-bottom: 10px;
+	}
+  }
+
+  .hb-page-side-image {
+	margin: 50px 0;
+
+	@media(max-width: 767px) {
+	  margin-bottom: 30px;
+	}
+
+	img {
+	  max-width: 315px;
+	  float: left;
+	  margin-left: -120px;
+	  margin-right: 40px;
+
+	  @media(max-width: 767px) {
+		max-width: 100%;
+		float: none;
+		margin-left: 0;
+		margin-right: 0;
+	  }
+	}
+
+	p {
+	  margin-top: 20px;
+	}
+  }
+}
+
+.hb-page-subscribe {
+  border-top: 1px solid #ececec;
+  margin-top: 80px;
+  padding-top: 40px;
+  margin-bottom: 100px;
+  text-align: center;
+
+  h3 {
+	font-size: 19px;
+  }
+
+  form {
+	margin-top: 30px;
+
+	input {
+	  outline: none;
+	  padding: 10px 15px;
+	  border-radius: 5px;
+	  border: 1px solid #d8d8d8;
+	  position: relative;
+	  top: 1px;
+	  width: 230px;
+	  font-size: 16px;
+	  margin-right: 20px;
+
+	  @include transition(all .2s);
+
+	  @media(max-width: 767px) {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+	  }
+
+	  &:focus {
+		border-color: #333;
+	  }
+	}
+  }
+}
+
+.pagination {
+	text-align: center;
+	display: block;
+}

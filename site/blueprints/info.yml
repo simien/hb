@@ -1,0 +1,29 @@
+title: Info
+
+pages:
+  template: info
+  num: zero
+
+files: false
+
+options:
+  template: false
+  status: false
+  hide: false
+
+fields:
+  title:
+    label: Title
+    type: title
+
+  cover:
+    label: Cover
+    type: image
+
+  intro:
+    label: Intro
+    type: textarea
+
+  text:
+    label: Text
+    type: textarea
