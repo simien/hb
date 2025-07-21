@@ -2,7 +2,7 @@ $(document).ready(function() {
 	//console.log("hello");
 	$('#calendar').fullCalendar({
 		// height: 'parent',
-		googleCalendarApiKey: 'AIzaSyCZSBv92hgV59-rx7kzBc0OyNum6hPwg3w',
+		googleCalendarApiKey: window.GOOGLE_CALENDAR_API_KEY,
 
 		events: {
 			googleCalendarId: 'homebase.works_cgg8li5ipu69dg8a0qusjb8rf0@group.calendar.google.com',

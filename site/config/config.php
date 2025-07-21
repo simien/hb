@@ -521,3 +521,6 @@ array('.', '..', '.DS_Store', '.svn', '.git', '.htaccess');
 
 */
 c::set('content.file.ignore', array());
+
+c::set('google.calendar.api_key', getenv('GOOGLE_CALENDAR_API_KEY') ?: '');
+c::set('google.maps.api_key', getenv('GOOGLE_MAPS_API_KEY') ?: '');
