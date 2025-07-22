@@ -524,3 +524,12 @@ c::set('content.file.ignore', array());
 
 c::set('google.calendar.api_key', getenv('GOOGLE_CALENDAR_API_KEY') ?: '');
 c::set('google.maps.api_key', getenv('GOOGLE_MAPS_API_KEY') ?: '');
+
+c::set('afbora.kirby-minify-html', [
+    'enabled' => true,
+    'ignore' => [
+        'sitemap', // ignore minification for sitemap template
+        'rss'      // ignore minification for rss template
+    ],
+    // 'options' => [ ... ] // Use defaults for now
+]);
