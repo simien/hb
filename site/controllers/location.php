@@ -59,7 +59,7 @@ return function ($site, $pages, $page)
 								'snippet' => 'emails/success',
 						]);
 
-				if ($form->success()) {
+				if ($form->success() && !defined('STATIC_BUILD')) {
 						go(page('registration/success')->url());
 				}
 		}

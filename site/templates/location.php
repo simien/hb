@@ -80,7 +80,7 @@
 												</div>
 												<p class="uk-text-meta uk-margin-small-top uk-margin-medium-right"><?= $item->featuredesc()->html() ?></p>
 											</div>
-									</div>
+										</div>
 									<?php endforeach ?>
 								</div>
 							</div>
@@ -94,7 +94,7 @@
 											<?php if($image = $page->image($image)): ?>
 												<a class="uk-inline" href="<?php echo $image->url() ?>" caption="<?php echo $image->caption() ?>">
 														<img src="<?= $image->crop(1200,700)->url(); ?> " alt="<?php echo $image->alt() ?>">
-												</a>
+													</a>
 											<?php endif ?>
 											</div>
 										<?php endforeach; ?>
@@ -107,36 +107,37 @@
 										<div>
 												<div class="uk-padding-remove uk-margin-medium-right">
 													<dl class="uk-description-list uk-text-small">
-															<dt>Service Hours</dt>
-															<hr class="uk-divider-small">
-															<dd>
-																Mon-Fri: 8am-6pm<br>
-																Sat-Sun: Closed<br>
-															</dd>
+														<dt>Service Hours</dt>
+														<hr class="uk-divider-small">
+														<dd>
+															Mon-Fri: 8am-6pm<br>
+															Sat-Sun: Closed<br>
+														</dd>
 													</dl>
 												</div>
 										</div>
 										<div>
 												<div class="uk-padding-remove uk-margin-medium-right">
 													<dl class="uk-description-list uk-text-small">
-															<dt>Address</dt>
-															<hr class="uk-divider-small">
-															<dd><?= $page->street()->html() ?>, <?= $page->suite()->html() ?></dd>
-															<dd><?= $page->city()->html() ?>, <?= $page->state()->html() ?>, <?= $page->zip()->html() ?></dd>
+														<dt>Address</dt>
+														<hr class="uk-divider-small">
+														<dd><?= $page->street()->html() ?>, <?= $page->suite()->html() ?></dd>
+														<dd><?= $page->city()->html() ?>, <?= $page->state()->html() ?>, <?= $page->zip()->html() ?></dd>
 													</dl>
 												</div>
 										</div>
 										<div>
 												<div class="uk-padding-remove uk-margin-medium-right">
 													<dl class="uk-description-list uk-text-small">
-															<dt>Direct</dt>
-															<hr class="uk-divider-small">
-															<dd><?= $page->phone()->html() ?></dd>
-															<dd><?= $page->email()->html() ?></dd>
+														<dt>Direct</dt>
+														<hr class="uk-divider-small">
+														<dd><?= $page->phone()->html() ?></dd>
+														<dd><?= $page->email()->html() ?></dd>
 													</dl>
 												</div>
 										</div>
 									</div>
+								</div>
 							</div>
 
 						</div>

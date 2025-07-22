@@ -1,9 +1,8 @@
 <?php
-
-$locations = page('locations')->children()->visible();
+$locationsPage = page('locations');
+$locations = $locationsPage ? $locationsPage->children()->visible() : [];
 
 if(isset($limit)) $locations = $locations->limit($limit);
-
 ?>
 
 <?php foreach($locations as $location): ?>
@@ -37,15 +36,15 @@ if(isset($limit)) $locations = $locations->limit($limit);
 							<div class="uk-margin-bottom-small uk-divider-small">
 								<div class="uk-grid-collapse uk-flex" uk-grid>
 										<div class="uk-width-expand">
-												<p class="uk-text-bold uk-margin-small-bottom uk-margin-small-top"><?= $base->title()->html() ?></p>
-												<p class="uk-text-meta uk-margin-remove-bottom uk-margin-remove-top uk-padding-bottom-small"><?= $base->subtitle()->html() ?></p>
+											<p class="uk-text-bold uk-margin-small-bottom uk-margin-small-top"><?= $base->title()->html() ?></p>
+											<p class="uk-text-meta uk-margin-remove-bottom uk-margin-remove-top uk-padding-bottom-small"><?= $base->subtitle()->html() ?></p>
 										</div>
 										<div class="uk-width-auto uk-margin-small-right">
-												<p class="uk-card-title uk-card-pricing uk-margin-remove-bottom uk-margin-remove-top">
-													<sup>$</sup>
-													<span><?= $base->price()->html() ?></span>
-													<sup>/<?= $base->interval()->html() ?></sup>
-												</p>
+											<p class="uk-card-title uk-card-pricing uk-margin-remove-bottom uk-margin-remove-top">
+												<sup>$</sup>
+												<span><?= $base->price()->html() ?></span>
+												<sup>/<?= $base->interval()->html() ?></sup>
+											</p>
 										</div>
 								</div>
 							</div>

@@ -15,7 +15,7 @@
 	<?php echo css($css->url()) ?>
 	<?php endforeach ?>
 	<!-- analytics -->
-	<?php echo analytics() ?>
+	<?php if(function_exists('analytics')) echo analytics(); ?>
 	<!-- drift -->
 	<?php snippet('drift') ?>
 

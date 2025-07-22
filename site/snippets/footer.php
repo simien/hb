@@ -66,13 +66,16 @@
 			<div class="uk-footer-column">
 				<h4>Locations</h4>
 				<ul class="footer-links uk-list">
-					<?php foreach($pages->find('locations')->children()->visible() as $subpage): ?>
-					<li>
-						<a href="<?php echo $subpage->url() ?>">
-							<?php echo html($subpage->title()) ?>
-						</a>
-					</li>
-					<?php endforeach ?>
+					<?php $locationsPage = $pages->find('locations'); ?>
+					<?php if($locationsPage): ?>
+						<?php foreach($locationsPage->children()->visible() as $subpage): ?>
+						<li>
+							<a href="<?php echo $subpage->url() ?>">
+								<?php echo html($subpage->title()) ?>
+							</a>
+						</li>
+						<?php endforeach ?>
+					<?php endif ?>
 				</ul>
 			</div>
 			<div class="uk-footer-column">
@@ -111,7 +114,7 @@
 	<?php endforeach ?>
 	<?php echo js('assets/js/main.js') ?>
 	<!-- cookie -->
-	<?= cookie(); ?>
+	<?php if(function_exists('cookie')) echo cookie(); ?>
 
 </body>
 </html>

@@ -153,3 +153,46 @@ docker exec -it kirby2-web apache2ctl -M | grep rewrite
 - The codebase is mounted as a volume, so changes on your host are reflected in the container.
 - If you add new plugins or make changes to the `site/` or `content/` folders, you may need to restart the container.
 - For production, use a more secure setup and consider using a specific PHP version image.
+
+## Environment Variables for Sensitive Keys
+
+This project now uses environment variables to store sensitive API keys and secrets. This helps keep your credentials secure and out of version control.
+
+### Required Environment Variables
+
+- `KIRBY_LICENSE_KEY` — Your Kirby license key
+- `MAILGUN_KEY` — Your Mailgun API key (for registration/contact forms)
+- `MAILGUN_DOMAIN` — Your Mailgun domain (for registration/contact forms)
+
+### How to Set Environment Variables
+
+#### Local Development (macOS/Linux)
+
+You can set these in your shell before running Docker or PHP:
+
+```sh
+export KIRBY_LICENSE_KEY=your-kirby-license-key
+export MAILGUN_KEY=your-mailgun-key
+export MAILGUN_DOMAIN=your-mailgun-domain
+```
+
+Or add them to your `.zshrc`, `.bashrc`, or a `.env` file (if using a tool like [direnv](https://direnv.net/) or [dotenv](https://github.com/vlucas/phpdotenv)).
+
+#### Docker Compose
+
+Add the variables to your `docker-compose.yml` under the `environment:` section for the `web` service:
+
+```yaml
+    environment:
+      - KIRBY_LICENSE_KEY=your-kirby-license-key
+      - MAILGUN_KEY=your-mailgun-key
+      - MAILGUN_DOMAIN=your-mailgun-domain
+```
+
+#### Production
+
+Set these variables in your hosting provider's environment configuration or deployment pipeline.
+
+### Fallbacks
+
+If the environment variables are not set, the site will use safe fallbacks (e.g., blank or 'your license key'), but some features may not work until you provide the correct values.

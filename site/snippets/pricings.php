@@ -1,7 +1,8 @@
 <div class="uk-grid-collapse uk-child-width-expand@s uk-grid-match" uk-grid>
 <?php
 
-$bases = page('locations')->grandChildren()->slice(0, 4)->visible();
+$locationsPage = page('locations');
+$bases = $locationsPage ? $locationsPage->grandChildren()->slice(0, 4)->visible() : [];
 
 ?>
 	<div>
