@@ -1,5 +1,7 @@
 <?php
 
+use Kirby\Toolkit\Str;
+
 $blogPage = page('blog');
 $blog = $blogPage ? $blogPage->children()->visible() : [];
 
@@ -37,7 +39,7 @@ if(isset($limit)) $blog = $blog->limit($limit);
 				<div class="uk-overlay uk-position-cover uk-padding-remove">
 					<div class="uk-padding">
             <p class="uk-card-title hb-text-light"><?= $article->title()->html() ?></p>
-						<p class="hb-text-muted uk-hidden"><?php echo excerpt($article->text(), 40) ?></p>
+						<p class="hb-text-muted uk-hidden"><?php echo Str::excerpt($article->text(), 40) ?></p>
 					</div>
 				</div>
 			</div>

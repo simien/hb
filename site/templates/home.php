@@ -26,7 +26,7 @@
 			</div>
 			<div class="uk-container uk-margin-large-top">
 				<div class="uk-flex uk-flex-center">
-					<?php $blogPage = $pages->find('blog'); ?>
+					<?php $blogPage = $site->find('blog'); ?>
 					<?php if ($blogPage): ?>
 						<a href="<?= $blogPage->url() ?>" class="uk-button uk-button-default uk-border-rounded">More Articles</a>
 					<?php else: ?>

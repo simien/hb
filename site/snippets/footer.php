@@ -51,7 +51,7 @@
 			<div class="uk-footer-column">
 				<h4>Latest Articles</h4>
 				<ul class="footer-links uk-list">
-					<?php $blogPage = $pages->find('blog'); ?>
+					<?php $blogPage = $site->find('blog'); ?>
 					<?php if ($blogPage): ?>
 						<?php foreach($blogPage->children()->visible()->limit(3) as $subpage): ?>
 						<li>
@@ -98,7 +98,7 @@
 			<hr>
 			<div class="uk-flex uk-flex-between uk-flex-middle">
 				<div class="uk-text-small">
-					<?php echo html::decode($site->copyright()->kirbytext()) ?> | <a href="#modal-install" uk-toggle>Download</a> <?php snippet('install') ?> | <a href="<?= $pages->find('privacy-policy')->url() ?>">Privacy Policy</a> | <a href="<?= $pages->find('terms-of-use')->url() ?>">Terms of Use</a>
+					<?php echo html($site->copyright()->kirbytext()) ?> | <a href="#modal-install" uk-toggle>Download</a> <?php snippet('install') ?> | <a href="<?= $pages->find('privacy-policy')->url() ?>">Privacy Policy</a> | <a href="<?= $pages->find('terms-of-use')->url() ?>">Terms of Use</a>
 				</div>
 				<div class="uk-text-small">
 					Made with
