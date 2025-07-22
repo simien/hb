@@ -51,16 +51,21 @@
 			<div class="uk-footer-column">
 				<h4>Latest Articles</h4>
 				<ul class="footer-links uk-list">
-					<?php foreach($pages->find('blog')->children()->visible()->limit(3) as $subpage): ?>
-					<li>
-						<time datetime="<?php echo $subpage->date('c') ?>">
-							<?php echo $subpage->date('d/m/y') ?>
-						</time>
-						<a href="<?php echo $subpage->url() ?>">
-							</date> <?php echo html($subpage->title()) ?>
-						</a>
-					</li>
-					<?php endforeach ?>
+					<?php $blogPage = $pages->find('blog'); ?>
+					<?php if ($blogPage): ?>
+						<?php foreach($blogPage->children()->visible()->limit(3) as $subpage): ?>
+						<li>
+							<time datetime="<?php echo $subpage->date('c') ?>">
+								<?php echo $subpage->date('d/m/y') ?>
+							</time>
+							<a href="<?php echo $subpage->url() ?>">
+								</date> <?php echo html($subpage->title()) ?>
+							</a>
+						</li>
+						<?php endforeach ?>
+					<?php else: ?>
+						<li><span class="uk-text-muted">No blog found</span></li>
+					<?php endif; ?>
 				</ul>
 			</div>
 			<div class="uk-footer-column">

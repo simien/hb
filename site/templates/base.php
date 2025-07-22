@@ -26,7 +26,9 @@
 		<div class="uk-section uk-section-<?= $site->bkgd()->html() ?> uk-padding-remove uk-position-relative ">
 		    <div class="uk-background-cover uk-flex uk-flex-column uk-flex-center uk-blend-<?= $site->blend()->html() ?>" style="background-image: url(<?php if($image = $page->cover()->toFile()): ?>
 					<?= $image->url() ?><?php else: ?>
-					<?php echo url('/content/cover.png') ?><?php endif ?>)" uk-parallax="bgy: -50" uk-height-viewport="offset-top: true">
+					<?php if ($cover = $site->file('cover.png')): ?>
+    <?php echo $cover->url(); ?><?php endif ?>
+					<?php endif ?>)" uk-parallax="bgy: -50" uk-height-viewport="offset-top: true">
 					<div class="uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle"></div>
 					<div class="uk-overlay uk-position-center uk-position-large uk-text-center">
 						<div class="uk-padding">

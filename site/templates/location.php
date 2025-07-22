@@ -56,7 +56,9 @@
 							<div id="floorplan" class="hb-content-stuck uk-background-defaut uk-dark uk-padding-large uk-text-center" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false" style="z-index: 4;" >
 								<h1 class="uk-h1 uk-text-bold hb-text-secondary uk-margin-small-bottom">Discover your HomeBase</h1>
 								<p class="uk-h4 uk-margin-remove-top uk-margin-large-bottom">Availability can rapidly change</p>
-								<img src="/content/<?= $page->diruri() ?>/plans/hb-prattst-floorplan.png">
+								<?php if ($plan = $page->find('plans/hb-prattst-floorplan.png')): ?>
+								    <img src="<?php echo $plan->url(); ?>">
+								<?php endif ?>
 							</div>
 
 							<div id="info" class="hb-content-stuck uk-background-default uk-padding-large" uk-scrollspy="cls: uk-animation-slide-bottom; repeat: false" style="z-index: 4;" >

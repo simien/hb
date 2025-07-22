@@ -1,5 +1,11 @@
 {
     "require": {
-        "mzur/kirby-uniform": "^3.4"
+        "mzur/kirby-uniform": "^3.4",
+        "getkirby/cms": "^4.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "getkirby/composer-installer": true
+        }
     }
 }

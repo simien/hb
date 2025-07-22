@@ -12,7 +12,8 @@
 			<img src="<?php if($image = $page->cover()->toFile()): ?>
 				<?= $image->url() ?>
 			<?php else: ?>
-				<?php echo url('/content/cover.png') ?>
+				<?php if ($cover = $site->file('cover.png')): ?>
+				    <?php echo $cover->url(); ?><?php endif ?>
 			<?php endif ?>">
 		</div>
 
@@ -20,7 +21,8 @@
 			<div class="uk-container uk-container-expand">
 
 				<ul uk-grid>
-					<?php foreach($page->children()->visible() as $member): ?>
+					<?php $visibleMembers = $page->children()->visible() ?? []; ?>
+					<?php foreach($visibleMembers as $member): ?>
 						<li class="uk-width-1-3">
 
 							<figure class="team-portrait">

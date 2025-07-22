@@ -2,9 +2,9 @@
 
 	<main class="main" role="main" uk-height-viewport="expand:true">
 
-		<img src="<?php if($image = $page->cover()->toFile()): ?>
-			<?= $image->url() ?><?php else: ?>
-			<?php echo url('/content/cover.png') ?><?php endif ?>" class="uk-hidden">
+		<?php if ($cover = $site->file('cover.png')): ?>
+			<img src="<?= $cover->url() ?>" class="uk-hidden">
+		<?php endif ?>
 
 		<section class="uk-section">
 

@@ -4,9 +4,10 @@
 
 					<div class="hb-slideshow" uk-cover>
 
-						<?php $images = page('locations/pratt-st')->images(); ?>
+						<?php $prattPage = page('locations/pratt-st'); ?>
+						<?php $images = $prattPage ? $prattPage->images() : []; ?>
 						<?php foreach($images as $image): ?>
-							<?php if($images = $page->slideshow()): ?>
+							<?php if ($image): ?>
 								<div class="hb-slideshow-image" style="background-image: url('<?= $image->url() ?>')"></div>
 							<?php endif ?>
 						<?php endforeach ?>
@@ -16,16 +17,20 @@
 					<div class="uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle hb-slideshow-overlay"></div>
 					<div class="uk-display-block uk-inline-clip hb-slideshow-content">
 						<p class="uk-heading-primary uk-text-bold uk-text-uppercase uk-font-primary hb-text-light uk-spacing-medium">Pratt St</p>
-						<a href="<?= $pages->find('locations/pratt-st')->url() ?>" class="uk-button uk-button-default uk-button-large uk-border-rounded uk-text-bold"><span uk-icon="icon: chevron-left"></span> Discover Pratt St</a>
+						<?php $prattLocation = $pages->find('locations/pratt-st'); ?>
+						<?php if ($prattLocation): ?>
+							<a href="<?= $prattLocation->url() ?>" class="uk-button uk-button-default uk-button-large uk-border-rounded uk-text-bold"><span uk-icon="icon: chevron-left"></span> Discover Pratt St</a>
+						<?php endif ?>
 					</div>
 
 				</div>
 				<div class="uk-background-cover uk-inline-clip uk-padding uk-flex uk-flex-middle uk-flex-center uk-light uk-blend-<?= $site->blend()->html() ?>">
 					<div class="hb-slideshow" uk-cover>
 
-						<?php $images = page('locations/clipper-mill')->images(); ?>
+						<?php $clipperPage = page('locations/clipper-mill'); ?>
+						<?php $images = $clipperPage ? $clipperPage->images() : []; ?>
 						<?php foreach($images as $image): ?>
-							<?php if($images): ?>
+							<?php if ($image): ?>
 								<div class="hb-slideshow-image" style="background-image: url('<?= $image->url() ?>')"></div>
 							<?php endif ?>
 						<?php endforeach ?>
@@ -34,7 +39,10 @@
 					<div class="uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle hb-slideshow-overlay"></div>
 					<div class="uk-display-block uk-inline-clip hb-slideshow-content">
 						<p class="uk-heading-primary uk-text-bold uk-text-uppercase uk-font-primary hb-text-light uk-spacing-large">Clipper Mill</p>
-						<a href="<?= $pages->find('locations/clipper-mill')->url() ?>" class="uk-button uk-button-default uk-button-large uk-border-rounded uk-text-bold">Discover Clipper Mill <span uk-icon="icon: chevron-right"></span></a>
+						<?php $clipperLocation = $pages->find('locations/clipper-mill'); ?>
+						<?php if ($clipperLocation): ?>
+							<a href="<?= $clipperLocation->url() ?>" class="uk-button uk-button-default uk-button-large uk-border-rounded uk-text-bold">Discover Clipper Mill <span uk-icon="icon: chevron-right"></span></a>
+						<?php endif ?>
 					</div>
 				</div>
 	</div>

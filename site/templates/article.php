@@ -6,7 +6,8 @@
 	    <div class="uk-section uk-light uk-background-cover hb-overlay-container uk-blend-screen" style="background-image: url(<?php if($image = $page->cover()->toFile()): ?>
 				<?= $image->url() ?>
 			<?php else: ?>
-				<?php echo url('/content/cover.png') ?>
+				<?php if ($cover = $site->file('cover.png')): ?>
+    <?php echo $cover->url(); ?><?php endif ?>
 			<?php endif ?>)">
 	        <div class="uk-container uk-container-expand hb-overlay-content uk-flex uk-flex-center uk-padding-large">
 						<div class="uk-width-2-3@m uk-width-1-1@s">

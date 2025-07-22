@@ -4,69 +4,164 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit934c3b99a2f0f1b9ae3ae930d8d41d25
+class ComposerStaticInit1e58d14be527998462056d6c2d87966b
 {
     public static $files = array (
         'e862d9fce5eaa28c798b151ac7fc8bc6' => __DIR__ . '/..' . '/mzur/kirby-flash/src/helpers.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
         '316f57472eecfe71b6733d9d2acbcae9' => __DIR__ . '/..' . '/mzur/kirby-form/src/helpers.php',
+        'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'f864ae44e8154e5ff6f4eec32f46d37f' => __DIR__ . '/../..' . '/kirby/config/setup.php',
+        '87988fc7b1c1f093da22a1a3de972f3a' => __DIR__ . '/../..' . '/kirby/config/helpers.php',
         '1f7ddc2baab73fdd75a4663f7a275bb1' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/helpers.php',
         'ae86d24018d4ff2f7d0f86beff02023f' => __DIR__ . '/..' . '/mzur/kirby-uniform/index.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'W' => 
+        array (
+            'Whoops\\' => 7,
+        ),
         'U' => 
         array (
             'Uniform\\' => 8,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Intl\\Normalizer\\' => 33,
+            'Symfony\\Polyfill\\Intl\\Idn\\' => 26,
+            'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Component\\Yaml\\' => 23,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
+        'L' => 
+        array (
+            'League\\ColorExtractor\\' => 22,
+            'Laminas\\Escaper\\' => 16,
+        ),
+        'K' => 
+        array (
+            'Kirby\\' => 6,
         ),
         'J' => 
         array (
             'Jevets\\Kirby\\' => 13,
         ),
+        'C' => 
+        array (
+            'Composer\\Semver\\' => 16,
+        ),
+        'B' => 
+        array (
+            'Base32\\' => 7,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Whoops\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
+        ),
         'Uniform\\' => 
         array (
             0 => __DIR__ . '/..' . '/mzur/kirby-uniform/src',
         ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Intl\\Normalizer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer',
+        ),
+        'Symfony\\Polyfill\\Intl\\Idn\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-intl-idn',
+        ),
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'Symfony\\Component\\Yaml\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/yaml',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/src',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
+        ),
+        'League\\ColorExtractor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/color-extractor/src',
+        ),
+        'Laminas\\Escaper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laminas/laminas-escaper/src',
+        ),
+        'Kirby\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/kirby/src',
+            1 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
+        ),
         'Jevets\\Kirby\\' => 
         array (
-            0 => __DIR__ . '/..' . '/mzur/kirby-flash/src',
-            1 => __DIR__ . '/..' . '/mzur/kirby-form/src',
+            0 => __DIR__ . '/..' . '/mzur/kirby-form/src',
+            1 => __DIR__ . '/..' . '/mzur/kirby-flash/src',
+        ),
+        'Composer\\Semver\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/composer/semver/src',
+        ),
+        'Base32\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/christian-riesen/base32/src',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'c' => 
+        array (
+            'claviska' => 
+            array (
+                0 => __DIR__ . '/..' . '/claviska/simpleimage/src',
+            ),
+        ),
+        'M' => 
+        array (
+            'Michelf' => 
+            array (
+                0 => __DIR__ . '/..' . '/michelf/php-smartypants',
+            ),
         ),
     );
 
     public static $classMap = array (
-        'Jevets\\Kirby\\Exceptions\\TokenMismatchException' => __DIR__ . '/..' . '/mzur/kirby-form/src/Exceptions/TokenMismatchException.php',
-        'Jevets\\Kirby\\Flash' => __DIR__ . '/..' . '/mzur/kirby-flash/src/Flash.php',
-        'Jevets\\Kirby\\Form' => __DIR__ . '/..' . '/mzur/kirby-form/src/Form.php',
-        'Jevets\\Kirby\\FormInterface' => __DIR__ . '/..' . '/mzur/kirby-form/src/FormInterface.php',
-        'Uniform\\Actions\\Action' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Actions/Action.php',
-        'Uniform\\Actions\\DumpAction' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Actions/DumpAction.php',
-        'Uniform\\Actions\\EmailAction' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Actions/EmailAction.php',
-        'Uniform\\Actions\\EmailSelectAction' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Actions/EmailSelectAction.php',
-        'Uniform\\Actions\\LogAction' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Actions/LogAction.php',
-        'Uniform\\Actions\\LoginAction' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Actions/LoginAction.php',
-        'Uniform\\Actions\\SessionStoreAction' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Actions/SessionStoreAction.php',
-        'Uniform\\Actions\\UploadAction' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Actions/UploadAction.php',
-        'Uniform\\Actions\\UsesSnippet' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Actions/UsesSnippet.php',
-        'Uniform\\Actions\\WebhookAction' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Actions/WebhookAction.php',
-        'Uniform\\Exceptions\\Exception' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Exceptions/Exception.php',
-        'Uniform\\Exceptions\\PerformerException' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Exceptions/PerformerException.php',
-        'Uniform\\Form' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Form.php',
-        'Uniform\\Guards\\CalcGuard' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Guards/CalcGuard.php',
-        'Uniform\\Guards\\Guard' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Guards/Guard.php',
-        'Uniform\\Guards\\HoneypotGuard' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Guards/HoneypotGuard.php',
-        'Uniform\\Performer' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/Performer.php',
-        'Uniform\\PerformerInterface' => __DIR__ . '/..' . '/mzur/kirby-uniform/src/PerformerInterface.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Normalizer' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',
+        'Parsedown' => __DIR__ . '/../..' . '/kirby/dependencies/parsedown/Parsedown.php',
+        'ParsedownExtra' => __DIR__ . '/../..' . '/kirby/dependencies/parsedown-extra/ParsedownExtra.php',
+        'Spyc' => __DIR__ . '/../..' . '/kirby/dependencies/spyc/Spyc.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit934c3b99a2f0f1b9ae3ae930d8d41d25::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit934c3b99a2f0f1b9ae3ae930d8d41d25::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit934c3b99a2f0f1b9ae3ae930d8d41d25::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit1e58d14be527998462056d6c2d87966b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit1e58d14be527998462056d6c2d87966b::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit1e58d14be527998462056d6c2d87966b::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit1e58d14be527998462056d6c2d87966b::$classMap;
 
         }, null, ClassLoader::class);
     }

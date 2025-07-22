@@ -1,8 +1,5 @@
 <?php
 
-// direct access protection
-if(!defined('KIRBY')) die('Direct access is not allowed');
-
 /*
 
 ---------------------------------------
@@ -20,8 +17,6 @@ Please read the End User License Agreement for more information:
 http://getkirby.com/license
 
 */
-
-c::set('license', 'your license key');
 
 
 /*
@@ -43,8 +38,6 @@ To work with relative URLs, you can set the URL like this:
 c::set('url', '/');
 
 */
-
-c::set('url', '/');
 
 
 /*
@@ -71,8 +64,6 @@ RewriteBase /subfolder
 
 */
 
-c::set('subfolder', false);
-
 
 /*
 
@@ -89,8 +80,6 @@ http://yourdomain.com/index.php/about
 
 */
 
-c::set('rewrite', true);
-
 
 /*
 
@@ -103,8 +92,6 @@ Sometimes it makes sense to change that to make your blog
 your homepage for example. Just change it here in that case.
 
 */
-
-c::set('home', 'home');
 
 
 /*
@@ -121,8 +108,6 @@ c::set('url', 'https://yourdomain.com');
 
 */
 
-c::set('ssl', true);
-
 
 /*
 
@@ -134,9 +119,6 @@ set the default video width and height for
 embedded flash videos from youtube or vimeo
 
 */
-
-c::set('kirbytext.video.width', 480);
-c::set('kirbytext.video.height', 358);
 
 
 /*
@@ -155,10 +137,6 @@ You can also switch between regular markdown
 or markdown extra: http://michelf.com/projects/php-markdown/extra/
 
 */
-
-c::set('markdown', true);
-c::set('markdown.breaks', true);
-c::set('markdown.extra', false);
 
 
 /*
@@ -180,22 +158,6 @@ texts which are parsed by kirbytext()
 
 */
 
-// smartypants
-c::set('smartypants', false);
-c::set('smartypants.attr', 1);
-c::set('smartypants.doublequote.open', '&#8220;');
-c::set('smartypants.doublequote.close', '&#8221;');
-c::set('smartypants.space.emdash', ' ');
-c::set('smartypants.space.endash', ' ');
-c::set('smartypants.space.colon', '&#160;');
-c::set('smartypants.space.semicolon', '&#160;');
-c::set('smartypants.space.marks', '&#160;');
-c::set('smartypants.space.frenchquote', '&#160;');
-c::set('smartypants.space.thousand', '&#160;');
-c::set('smartypants.space.unit', '&#160;');
-c::set('smartypants.skip', 'pre|code|kbd|script|math');
-
-
 
 /*
 
@@ -215,9 +177,6 @@ If you don't want to use tiny urls for your site
 disable them here
 
 */
-
-c::set('tinyurl.folder', 'x');
-c::set('tinyurl.enabled', true);
 
 
 /*
@@ -260,12 +219,6 @@ c::set('cache.ignore', array('search', 'some/other/uri/to/ignore'));
 
 */
 
-c::set('cache', false);
-c::set('cache.autoupdate', true);
-c::set('cache.data', true);
-c::set('cache.html', true);
-c::set('cache.ignore', array());
-
 
 /*
 
@@ -279,8 +232,6 @@ date functions here. It is set to UTC by default.
 Please read more about it at: http://php.net/manual/en/function.date-default-timezone-set.php
 
 */
-
-c::set('timezone', 'EST');
 
 
 /*
@@ -298,8 +249,6 @@ go to your homepage afterwards to display it on refresh.
 
 */
 
-c::set('troubleshoot', false);
-
 
 /*
 
@@ -313,8 +262,6 @@ production site, so you won't get nasty
 php errors there.
 
 */
-
-c::set('debug', true);
 
 
 /*
@@ -340,78 +287,6 @@ in doubt like:
 c::set('yourproject.yourvar', 'yourvalue');
 
 */
-
-c::set('panel.install', true);
-c::set('cachebuster', false);
-c::set('panel.favicon', 'content/favicon.ico');
-c::set('language.detect',true);
-c::set('ka.cookie.link', 'privacy-policy');
-c::set('analytics', false);
-c::set('analytics.id', 'UA-103018571-1');
-c::set('analytics.anonymize', true);
-c::set('plugin.compress', true);
-c::set('meta-tags.default', function(Page $page, Site $site) {
-		$description = $page->isHomePage()
-								? $site->description()->html()
-								: $page->description()->html();
-		$title = $page->isHomePage()
-								? $site->title().' | '.$description
-								: $page->title().' | '.$site->title();
-    return [
-        'title' => $title,
-        'meta' => [
-            'description' => $description,
-            ['content' => $site->title(), 'name' => 'application-name'],
-						['content' => $site->title(), 'name' => 'apple-mobile-web-app-title'],
-						['content' => '#FDB813', 'name' => 'apple-mobile-web-app-status-bar-style'],
-						['content' => '#FDB813', 'name' => 'theme-color'],
-						['content' => '#FDB813', 'name' => 'msapplication-TileColor'],
-						['content' => 'Tooltip', 'name' => 'msapplication-tooltip'],
-            ['content' => url('assets/images/icons/mstile-144x144.png'), 'name' => 'msapplication-TileImage']
-        ],
-        'link' => [
-          'stylesheet' => url('assets/css/main.min.css'),
-          'canonical' => $page->url(),
-          'ico' => [
-              ['href' => url('assets/images/icons/favicon.ico')]
-          ],
-          'icon' => [
-              ['href' => url('assets/images/icons/favicon-16x16.png'), 'sizes' => '16x16', 'type' =>'image/png'],
-              ['href' => url('assets/images/icons/favicon-32x32.png'), 'sizes' => '32x32', 'type' =>'image/png'],
-              ['href' => url('assets/images/icons/favicon-96x96.png'), 'sizes' => '96x96', 'type' =>'image/png'],
-							['href' => url('assets/images/icons/favicon-128x128.png'), 'sizes' => '128x128', 'type' =>'image/png'],
-							['href' => url('assets/images/icons/favicon-196x196.png'), 'sizes' => '196x196', 'type' =>'image/png']
-          ],
-					'mask-icon' => [
-              ['href' => url('assets/images/icons/safari-pinned-tab.svg'), 'color' => '#FDB813']
-          ],
-          'apple-touch-icon' => [
-              ['href' => url('assets/images/icons/apple-touch-icon-57x57.png'), 'sizes' => '57x57', 'type' =>'image/png', 'rel'=>'apple-touch-icon-precomposed'],
-              ['href' => url('assets/images/icons/apple-touch-icon-60x60.png'), 'sizes' => '60x60', 'type' =>'image/png', 'rel'=>'apple-touch-icon-precomposed'],
-              ['href' => url('assets/images/icons/apple-touch-icon-76x76.png'), 'sizes' => '76x76', 'type' =>'image/png', 'rel'=>'apple-touch-icon-precomposed'],
-							['href' => url('assets/images/icons/apple-touch-icon-114x114.png'), 'sizes' => '114x114', 'type' =>'image/png', 'rel'=>'apple-touch-icon-precomposed'],
-							['href' => url('assets/images/icons/apple-touch-icon-120x120.png'), 'sizes' => '120x120', 'type' =>'image/png', 'rel'=>'apple-touch-icon-precomposed'],
-							['href' => url('assets/images/icons/apple-touch-icon-144x144.png'), 'sizes' => '144x144', 'type' =>'image/png', 'rel'=>'apple-touch-icon-precomposed'],
-							['href' => url('assets/images/icons/apple-touch-icon-152x152.png'), 'sizes' => '152x152', 'type' =>'image/png', 'rel'=>'apple-touch-icon-precomposed'],
-          ]
-        ],
-        'og' => [
-            'title' => $page->isHomePage()
-                ? $site->title()
-                : $page->title(),
-            'type' => 'website',
-            'site_name' => $site->title(),
-            'url' => $page->url(),
-            'image' => url('content/cover.png')
-        ],
-        'twitter' => [
-            'card' => 'summary',
-            'site' => $site->twitter(),
-            'title' => $page->title(),
-            'image' => url('content/cover.png')
-        ]
-    ];
-});
 
 
 /*
@@ -478,12 +353,6 @@ to set the default locale settings for all PHP functions
 
 */
 
-c::set('lang.support', false);
-c::set('lang.default', 'en');
-c::set('lang.available', array('en', 'de'));
-c::set('lang.detect', true);
-c::set('lang.locale', false);
-
 
 /*
 
@@ -496,8 +365,6 @@ content files here if you'd rather use something
 else than txt. For example md or mdown.
 
 */
-
-c::set('content.file.extension', 'txt');
 
 
 /*
@@ -516,4 +383,118 @@ array('.', '..', '.DS_Store', '.svn', '.git', '.htaccess');
 …so you don't have to add them.
 
 */
-c::set('content.file.ignore', array());
+
+return [
+  'license' => 'your license key',
+  'url' => '/',
+  'subfolder' => false,
+  'rewrite' => true,
+  'home' => 'home',
+  'ssl' => true,
+  'kirbytext.video.width' => 480,
+  'kirbytext.video.height' => 358,
+  'markdown' => true,
+  'markdown.breaks' => true,
+  'markdown.extra' => false,
+  'smartypants' => false,
+  'smartypants.attr' => 1,
+  'smartypants.doublequote.open' => '&#8220;',
+  'smartypants.doublequote.close' => '&#8221;',
+  'smartypants.space.emdash' => ' ',
+  'smartypants.space.endash' => ' ',
+  'smartypants.space.colon' => '&#160;',
+  'smartypants.space.semicolon' => '&#160;',
+  'smartypants.space.marks' => '&#160;',
+  'smartypants.space.frenchquote' => '&#160;',
+  'smartypants.space.thousand' => '&#160;',
+  'smartypants.space.unit' => '&#160;',
+  'smartypants.skip' => 'pre|code|kbd|script|math',
+  'tinyurl.folder' => 'x',
+  'tinyurl.enabled' => true,
+  'cache' => false,
+  'cache.autoupdate' => true,
+  'cache.data' => true,
+  'cache.html' => true,
+  'cache.ignore' => [],
+  'timezone' => 'EST',
+  'troubleshoot' => false,
+  'debug' => true,
+  'panel.install' => true,
+  'cachebuster' => false,
+  'panel.favicon' => 'content/favicon.ico',
+  'language.detect' => true,
+  'ka.cookie.link' => 'privacy-policy',
+  'analytics' => false,
+  'analytics.id' => 'UA-103018571-1',
+  'analytics.anonymize' => true,
+  'plugin.compress' => true,
+  'meta-tags.default' => function(Page $page, Site $site) {
+    $description = $page->isHomePage()
+      ? $site->description()->html()
+      : $page->description()->html();
+    $title = $page->isHomePage()
+      ? $site->title().' | '.$description
+      : $page->title().' | '.$site->title();
+    return [
+      'title' => $title,
+      'meta' => [
+        'description' => $description,
+        ['content' => $site->title(), 'name' => 'application-name'],
+        ['content' => $site->title(), 'name' => 'apple-mobile-web-app-title'],
+        ['content' => '#FDB813', 'name' => 'apple-mobile-web-app-status-bar-style'],
+        ['content' => '#FDB813', 'name' => 'theme-color'],
+        ['content' => '#FDB813', 'name' => 'msapplication-TileColor'],
+        ['content' => 'Tooltip', 'name' => 'msapplication-tooltip'],
+        ['content' => url('assets/images/icons/mstile-144x144.png'), 'name' => 'msapplication-TileImage']
+      ],
+      'link' => [
+        'stylesheet' => url('assets/css/main.min.css'),
+        'canonical' => $page->url(),
+        'ico' => [
+          ['href' => url('assets/images/icons/favicon.ico')]
+        ],
+        'icon' => [
+          ['href' => url('assets/images/icons/favicon-16x16.png'), 'sizes' => '16x16', 'type' =>'image/png'],
+          ['href' => url('assets/images/icons/favicon-32x32.png'), 'sizes' => '32x32', 'type' =>'image/png'],
+          ['href' => url('assets/images/icons/favicon-96x96.png'), 'sizes' => '96x96', 'type' =>'image/png'],
+          ['href' => url('assets/images/icons/favicon-128x128.png'), 'sizes' => '128x128', 'type' =>'image/png'],
+          ['href' => url('assets/images/icons/favicon-196x196.png'), 'sizes' => '196x196', 'type' =>'image/png']
+        ],
+        'mask-icon' => [
+          ['href' => url('assets/images/icons/safari-pinned-tab.svg'), 'color' => '#FDB813']
+        ],
+        'apple-touch-icon' => [
+          ['href' => url('assets/images/icons/apple-touch-icon-57x57.png'), 'sizes' => '57x57', 'type' =>'image/png', 'rel'=>'apple-touch-icon-precomposed'],
+          ['href' => url('assets/images/icons/apple-touch-icon-60x60.png'), 'sizes' => '60x60', 'type' =>'image/png', 'rel'=>'apple-touch-icon-precomposed'],
+          ['href' => url('assets/images/icons/apple-touch-icon-76x76.png'), 'sizes' => '76x76', 'type' =>'image/png', 'rel'=>'apple-touch-icon-precomposed'],
+          ['href' => url('assets/images/icons/apple-touch-icon-114x114.png'), 'sizes' => '114x114', 'type' =>'image/png', 'rel'=>'apple-touch-icon-precomposed'],
+          ['href' => url('assets/images/icons/apple-touch-icon-120x120.png'), 'sizes' => '120x120', 'type' =>'image/png', 'rel'=>'apple-touch-icon-precomposed'],
+          ['href' => url('assets/images/icons/apple-touch-icon-144x144.png'), 'sizes' => '144x144', 'type' =>'image/png', 'rel'=>'apple-touch-icon-precomposed'],
+          ['href' => url('assets/images/icons/apple-touch-icon-152x152.png'), 'sizes' => '152x152', 'type' =>'image/png', 'rel'=>'apple-touch-icon-precomposed'],
+        ]
+      ],
+      'og' => [
+        'title' => $page->isHomePage()
+          ? $site->title()
+          : $page->title(),
+        'type' => 'website',
+        'site_name' => $site->title(),
+        'url' => $page->url(),
+        'image' => url('content/cover.png')
+      ],
+      'twitter' => [
+        'card' => 'summary',
+        'site' => $site->twitter(),
+        'title' => $page->title(),
+        'image' => url('content/cover.png')
+      ]
+    ];
+  },
+  'lang.support' => false,
+  'lang.default' => 'en',
+  'lang.available' => ['en', 'de'],
+  'lang.detect' => true,
+  'lang.locale' => false,
+  'content.file.extension' => 'txt',
+  'content.file.ignore' => [],
+];

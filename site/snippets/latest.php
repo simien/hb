@@ -1,6 +1,11 @@
 <?php
 
-$blog = page('blog')->children()->visible();
+$blogPage = page('blog');
+$blog = $blogPage ? $blogPage->children()->visible() : [];
+
+if (is_array($blog)) {
+    $blog = new Kirby\Cms\Pages([]);
+}
 
 /*
 

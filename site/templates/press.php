@@ -17,7 +17,9 @@
 			if($image = $page->cover()->toFile()): ?>
 			<img src="<?= $image->url() ?>">
 			<?php else: ?>
-			<img src="<?php echo url('/content/cover.png') ?>">
+			<?php if ($cover = $site->file('cover.png')): ?>
+    <img src="<?php echo $cover->url(); ?>">
+<?php endif ?>
 			<?php endif ?>
 		</div>
 

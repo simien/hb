@@ -26,7 +26,12 @@
 			</div>
 			<div class="uk-container uk-margin-large-top">
 				<div class="uk-flex uk-flex-center">
-					<a href="<?= $pages->find('blog')->url() ?>" class="uk-button uk-button-default uk-border-rounded">More Articles</a>
+					<?php $blogPage = $pages->find('blog'); ?>
+					<?php if ($blogPage): ?>
+						<a href="<?= $blogPage->url() ?>" class="uk-button uk-button-default uk-border-rounded">More Articles</a>
+					<?php else: ?>
+						<span class="uk-text-muted">Blog not found</span>
+					<?php endif; ?>
 				</div>
 			</div>
 		</section>
