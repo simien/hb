@@ -197,12 +197,18 @@ Set these variables in your hosting provider's environment configuration or depl
 
 If the environment variables are not set, the site will use safe fallbacks (e.g., blank or 'your license key'), but some features may not work until you provide the correct values.
 
+# Static Site Generation & Plugin Removal Notice
+
+**Note:** The `site/plugins/staticbuilder` plugin (used for static site export in Kirby 2) has been removed from this repository. Static site generation is not currently available in this codebase. As part of the planned migration to Kirby 4, a modern, supported static export solution will be evaluated and integrated if needed.
+
+If you require static builds, consider using a compatible plugin for Kirby 4 or exporting manually after migration.
+
 # Migration Note (July 2025)
 
 - The `static-export-setup` branch included extensive troubleshooting and robustness improvements for static site export with Kirby 2 and StaticBuilder.
-- Improvements include: safer plugin usage, existence checks for pages/fields, and better error handling in templates/snippets.
-- Despite best efforts, some pages could not be built due to limitations or edge cases in StaticBuilder/Kirby 2.
-- **Plan:** The project will be upgraded to Kirby 4 for continued support, modern plugin compatibility, and improved static site generation (using afbora/kirby-staticbuilder).
+- **StaticBuilder is no longer included in this repository.**
+- Improvements from this branch (safer plugin usage, existence checks for pages/fields, better error handling in templates/snippets) will be carried forward into the new Kirby 4 codebase.
+- **Plan:** The project will be upgraded to Kirby 4 for continued support, modern plugin compatibility, and improved static site generation (using a supported solution for Kirby 4).
 - All best practices and code improvements from this branch will be carried forward into the new Kirby 4 codebase.
 
 ---
