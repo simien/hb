@@ -196,3 +196,13 @@ Set these variables in your hosting provider's environment configuration or depl
 ### Fallbacks
 
 If the environment variables are not set, the site will use safe fallbacks (e.g., blank or 'your license key'), but some features may not work until you provide the correct values.
+
+# Migration Note (July 2025)
+
+- The `static-export-setup` branch included extensive troubleshooting and robustness improvements for static site export with Kirby 2 and StaticBuilder.
+- Improvements include: safer plugin usage, existence checks for pages/fields, and better error handling in templates/snippets.
+- Despite best efforts, some pages could not be built due to limitations or edge cases in StaticBuilder/Kirby 2.
+- **Plan:** The project will be upgraded to Kirby 4 for continued support, modern plugin compatibility, and improved static site generation (using afbora/kirby-staticbuilder).
+- All best practices and code improvements from this branch will be carried forward into the new Kirby 4 codebase.
+
+---
