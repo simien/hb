@@ -1,0 +1,73 @@
+Status: listed
+----
+Template: base
+----
+
+Price: 400
+
+----
+
+Subtitle: Reserved Workspace
+
+----
+
+Description: 
+
+Workbase is for the serious workers who want to be well-equipped for long days and late nights.  Every person who chooses to purchase a Workbase membership at 300 W. Pratt will get full access to the Homebase community and 24/7 access to their official workspace.  The best part is, after a late night at the office Workbase members won't even have to pack up their belongings because they will be kept safe and sound in their private, secured, workspace until they are ready to go the next day.
+
+All Workbase members will have a reserved workspace equipped with a Jarvis Standing desk, comfortable chair, storage and plenty of natural light.  For just $395/month dedicated small business owners and serious entrepreneurs won't be able to find a better deal anywhere else!
+
+**Who needs Workbase?**
+Workbase is a serious solution for a serious worker offered at a price that appeals to everyone.
+- Small business start-ups that need a designated place to hash out their ideas and spend long days working on product launches can use Workbase as a reliable resource to help them achieve success.
+- Entrepreneurs that are dedicated to working every day in order to reach their goals can use Workbase as a place to organize their thoughts and hold them accountable for getting their work done.
+- Remote workers who crave human interaction can use Workbase as a place to network and build a community they can rely on.
+
+Workbase has benefits that can't be beaten!
+- Access to Homebase 24/7
+- A secured, designated workspace
+- An official shared address at 300 W. Pratt
+- 4 Meetbase Credits per month
+- 10% off premium events
+- 10% off Mailbase
+
+There is no time to waste when it comes to moving your business towards success.  Contact us today with your questions about Workbase or to reserve your official workspace at 300 W. Pratt!
+
+----
+
+Interval: mo
+
+----
+
+Intro: Reserved Workspace outfitted with a Jarvis Standing Desk.
+
+----
+
+Contents: 
+
+----
+
+Cover: homebase-prattst-5.jpg
+
+----
+
+Airtable: shr6uyEcXotwUu3dq
+
+----
+
+Features: 
+
+- 
+  featuretitle: 24/7 Secure Access
+- 
+  featuretitle: Reserved Workspace
+- 
+  featuretitle: 4 Meetbase Credits /mo
+- 
+  featuretitle: '10% Off Premium Events'
+- 
+  featuretitle: '10% Off Mailbase'
+
+----
+
+Icon: user
