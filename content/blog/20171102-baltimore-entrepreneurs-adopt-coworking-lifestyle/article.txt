@@ -1,0 +1,53 @@
+Status: listed
+----
+Template: article
+----
+Title: Baltimore Entrepreneurs Adopt Coworking Lifestyle
+
+----
+
+Date: 2017-11-02
+
+----
+
+Coverimage: homebase-prattst-7.jpg
+
+----
+
+Text: 
+
+Coworking has been growing in popularity around the world steadily for the past five years. Although Europe continues to be the leader in coworking spaces, the United States is quickly adopting the idea, with major cities across the nation developing custom services to accommodate the changing workforce’s new needs.
+
+Baltimore, a city of innovators, has been quick to not only adopt coworking but to find ways to advance it. And the city is counting on these job-making entrepreneurs and businesses to succeed. Check out this Baltimore Occupational visualization by industry.
+
+<div class="uk-container uk-container-expand uk-height-large uk-hidden">
+<iframe width="100%" height="100%" src="https://embed.datausa.io/profile/geo/baltimore-md/economy/top_occ_med_earnings?viz=True" frameborder="0" ></iframe>
+</div>
+
+In fact, just last year the city made a [$5 billion gamble in its entrepreneurs](https://www.cnbc.com/2016/10/28/a-5-billion-bet-that-entrepreneurs-can-revive-baltimore-and-under-armours-kevin-plank.html?target=_blank), aimed at revitalizing the entire Port Covington area. Although not projected to be completed until 2035, this project is looking at the city with&nbsp;hope.
+
+Part of the redevelopment project is to create more spaces that can attract new start-ups. As more and more young professionals are choosing to opt out of the traditional 9 to 5 corporate work environment, risking it all to strike out on their own and do something they love, Baltimore is looking at ways to encourage and support&nbsp;them.
+
+> As the CEO behind the redevelopment project Tom Geddes says, **“jobs are great, careers are better, and ownership is best.”**
+
+Among the options Baltimore is looking at to support these entrepreneurs and small businesses is coworking spaces. Already in full effect around the world and other parts of the nation, coworking allows non-traditional members of the workforce a creative solution to workspace, getting them out of their homes and into environment that holds them accountable and provides work solutions, like office supplies and tools, they need.
+
+At the cutting edge of coworking space is Baltimore’s own Homebase. An attractive and affordable solution for individuals and small startups looking for space, Homebase offers monthly plans that allow total access of their space and amenities.
+
+To learn more about Homebase and to see why coworking is a great solution, schedule a tour of the space&nbsp;today!
+
+----
+
+Subtitle: Baltimore, a city of innovators, has been quick to not only adopt coworking but to find ways to advance it. And the city is counting on these job-making entrepreneurs and businesses to succeed.
+
+----
+
+Author: sap
+
+----
+
+Scheduled: 
+
+----
+
+Cover: homebaseworks-00094.jpg
