@@ -165,10 +165,10 @@
 			<script async defer
 			<?php /* Inject Google API keys for JS use */ ?>
 			<script>
-			window.GOOGLE_CALENDAR_API_KEY = "<?= c::get('google.calendar.api_key') ?>";
-			window.GOOGLE_MAPS_API_KEY = "<?= c::get('google.maps.api_key') ?>";
+			window.GOOGLE_CALENDAR_API_KEY = "<?= kirby()->option('google.calendar.api_key') ?>";
+			window.GOOGLE_MAPS_API_KEY = "<?= kirby()->option('google.maps.api_key') ?>";
 			</script>
-			src="https://maps.googleapis.com/maps/api/js?key=<?= c::get('google.maps.api_key') ?>&callback=initMap"></script>
+			src="https://maps.googleapis.com/maps/api/js?key=<?= kirby()->option('google.maps.api_key') ?>&callback=initMap"></script>
 		</div>
 
 		<div class="uk-grid-collapse uk-child-width-1-2 uk-text-center hb-pagination uk-flex uk-flex-middle" uk-grid>
