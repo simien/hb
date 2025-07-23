@@ -39,9 +39,15 @@
 		<section class="uk-section uk-background-<?= $site->bkgd()->html() ?> uk-text-center uk-padding-remove">
 			<div class="uk-background-cover uk-height-large uk-inline-clip uk-flex uk-flex-middle uk-flex-center uk-light uk-blend-<?= $site->blend()->html() ?>">
 				<video autoplay playsinline muted loop controls uk-video="automute: true" uk-cover>
-					<source src="<?php echo url('content/home/homebase-works.mp4') ?>" type="video/mp4">
-					<source src="<?php echo url('content/home/homebase-works.webm') ?>" type="video/webm">
-					<source src="<?php echo url('content/home/homebase-works.ogg') ?>" type="video/ogg">
+					<?php if ($mp4 = $page->file('homebase-works.mp4')): ?>
+						<source src="<?= $mp4->url() ?>" type="video/mp4">
+					<?php endif; ?>
+					<?php if ($webm = $page->file('homebase-works.webm')): ?>
+						<source src="<?= $webm->url() ?>" type="video/webm">
+					<?php endif; ?>
+					<?php if ($ogg = $page->file('homebase-works.ogg')): ?>
+						<source src="<?= $ogg->url() ?>" type="video/ogg">
+					<?php endif; ?>
 				</video>
 				<div class="uk-position-cover uk-overlay uk-overlay-primary uk-flex uk-flex-center uk-flex-middle"></div>
 				<div class="uk-display-block uk-inline-clip uk-padding-large">
