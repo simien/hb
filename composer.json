@@ -7,5 +7,8 @@
         "allow-plugins": {
             "getkirby/composer-installer": true
         }
+    },
+    "require-dev": {
+        "getkirby/cli": "^1.7"
     }
 }

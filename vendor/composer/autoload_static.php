@@ -7,10 +7,12 @@ namespace Composer\Autoload;
 class ComposerStaticInit1e58d14be527998462056d6c2d87966b
 {
     public static $files = array (
-        'e862d9fce5eaa28c798b151ac7fc8bc6' => __DIR__ . '/..' . '/mzur/kirby-flash/src/helpers.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        'e862d9fce5eaa28c798b151ac7fc8bc6' => __DIR__ . '/..' . '/mzur/kirby-flash/src/helpers.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         'e69f7f6ee287b969198c3c9d6777bd38' => __DIR__ . '/..' . '/symfony/polyfill-intl-normalizer/bootstrap.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '316f57472eecfe71b6733d9d2acbcae9' => __DIR__ . '/..' . '/mzur/kirby-form/src/helpers.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -36,15 +38,19 @@ class ComposerStaticInit1e58d14be527998462056d6c2d87966b
             'Symfony\\Polyfill\\Intl\\Idn\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
+            'Seld\\CliPrompt\\' => 15,
         ),
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+            'Psr\\Http\\Message\\' => 17,
+            'Psr\\Http\\Client\\' => 16,
             'PHPMailer\\PHPMailer\\' => 20,
         ),
         'L' => 
         array (
             'League\\ColorExtractor\\' => 22,
+            'League\\CLImate\\' => 15,
             'Laminas\\Escaper\\' => 16,
         ),
         'K' => 
@@ -54,6 +60,12 @@ class ComposerStaticInit1e58d14be527998462056d6c2d87966b
         'J' => 
         array (
             'Jevets\\Kirby\\' => 13,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Psr7\\' => 16,
+            'GuzzleHttp\\Promise\\' => 19,
+            'GuzzleHttp\\' => 11,
         ),
         'C' => 
         array (
@@ -94,9 +106,22 @@ class ComposerStaticInit1e58d14be527998462056d6c2d87966b
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
         ),
+        'Seld\\CliPrompt\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/seld/cli-prompt/src',
+        ),
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
+        ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
+        ),
+        'Psr\\Http\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-client/src',
         ),
         'PHPMailer\\PHPMailer\\' => 
         array (
@@ -106,6 +131,10 @@ class ComposerStaticInit1e58d14be527998462056d6c2d87966b
         array (
             0 => __DIR__ . '/..' . '/league/color-extractor/src',
         ),
+        'League\\CLImate\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/climate/src',
+        ),
         'Laminas\\Escaper\\' => 
         array (
             0 => __DIR__ . '/..' . '/laminas/laminas-escaper/src',
@@ -113,12 +142,26 @@ class ComposerStaticInit1e58d14be527998462056d6c2d87966b
         'Kirby\\' => 
         array (
             0 => __DIR__ . '/../..' . '/kirby/src',
-            1 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
+            1 => __DIR__ . '/..' . '/getkirby/cli/src',
+            2 => __DIR__ . '/..' . '/getkirby/cli/tests',
+            3 => __DIR__ . '/..' . '/getkirby/composer-installer/src',
         ),
         'Jevets\\Kirby\\' => 
         array (
             0 => __DIR__ . '/..' . '/mzur/kirby-form/src',
             1 => __DIR__ . '/..' . '/mzur/kirby-flash/src',
+        ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+        ),
+        'GuzzleHttp\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
+        ),
+        'GuzzleHttp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
         'Composer\\Semver\\' => 
         array (
