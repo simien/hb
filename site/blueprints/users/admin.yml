@@ -1,0 +1,26 @@
+---
+title: Admin
+
+fields:
+  avatar:
+    label: Avatar
+    type: files
+    multiple: false
+    layout: cards
+    help: Upload a profile image
+  bio:
+    label: Bio
+    type: textarea
+    help: Short biography or description
+  twitter:
+    label: Twitter
+    type: url
+    help: Twitter profile URL
+  phone:
+    label: Phone
+    type: tel
+    help: Contact phone number
+  roleDescription:
+    label: Role Description
+    type: text
+    help: What does this admin do? 
