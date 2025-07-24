@@ -3,20 +3,12 @@ Status: listed
 Template: article
 ----
 Title: Baltimore Entrepreneurs Adopt Coworking Lifestyle
-
 ----
-
 Date: 2017-11-02
-
 ----
-
 Coverimage: homebase-prattst-7.jpg
-
 ----
-
-Text: 
-
-Coworking has been growing in popularity around the world steadily for the past five years. Although Europe continues to be the leader in coworking spaces, the United States is quickly adopting the idea, with major cities across the nation developing custom services to accommodate the changing workforce’s new needs.
+Text: Coworking has been growing in popularity around the world steadily for the past five years. Although Europe continues to be the leader in coworking spaces, the United States is quickly adopting the idea, with major cities across the nation developing custom services to accommodate the changing workforce’s new needs.
 
 Baltimore, a city of innovators, has been quick to not only adopt coworking but to find ways to advance it. And the city is counting on these job-making entrepreneurs and businesses to succeed. Check out this Baltimore Occupational visualization by industry.
 
@@ -35,19 +27,12 @@ Among the options Baltimore is looking at to support these entrepreneurs and sma
 At the cutting edge of coworking space is Baltimore’s own Homebase. An attractive and affordable solution for individuals and small startups looking for space, Homebase offers monthly plans that allow total access of their space and amenities.
 
 To learn more about Homebase and to see why coworking is a great solution, schedule a tour of the space&nbsp;today!
-
 ----
-
 Subtitle: Baltimore, a city of innovators, has been quick to not only adopt coworking but to find ways to advance it. And the city is counting on these job-making entrepreneurs and businesses to succeed.
-
 ----
-
 Author: sap
-
 ----
-
 Scheduled: 
-
 ----
-
 Cover: homebaseworks-00094.jpg
+----

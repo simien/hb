@@ -3,20 +3,12 @@ Status: listed
 Template: article
 ----
 Title: Take a Tour Through Homebase, Coworking in Baltimore
-
 ----
-
 Date: 2017-06-12
-
 ----
-
 Coverimage: homebase-prattst-43.jpg
-
 ----
-
-Text: 
-
-The concept of coworking is growing into much more than a trend. Today, all over the country, individuals and small companies are using coworking spaces to effectively manage their overhead expenses, allowing them to grow without having to worry about the cost of space.
+Text: The concept of coworking is growing into much more than a trend. Today, all over the country, individuals and small companies are using coworking spaces to effectively manage their overhead expenses, allowing them to grow without having to worry about the cost of space.
 
 ## **Solution**
 
@@ -33,19 +25,12 @@ Unlike some coworking spaces, Homebase gives members an opportunity to use all o
 (image: homebaseworks-00081.jpg caption: Relax in our lounge)
 
 Always open to suggestions, Homebase allows you to be a part of the working space, taking your comments and turning them into reality. To learn more about Baltimore’s coworking solution, you can book a tour of the space today and see for yourself why more and more people are choosing Homebase as their workspace.
-
 ----
-
 Subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-
 ----
-
 Author: sap
-
 ----
-
 Scheduled: 
-
 ----
-
 Cover: homebaseworks-00081.jpg
+----

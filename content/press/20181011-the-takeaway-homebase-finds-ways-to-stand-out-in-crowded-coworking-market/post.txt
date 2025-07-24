@@ -1,15 +1,12 @@
 Status: listed
+----
 Template: post
+----
 Title: The Takeaway: Homebase finds ways to stand out in crowded coworking market
-
 ----
-
 Date: 2018-10-11
-
 ----
-
 Text: After years spent at startups and in coworking spaces up and down the East Coast, Simien Antonis-Parr is back in Baltimore and helping to launch the city’s newest coworking space: Homebase. Funded by ValStone Partners, Homebase has one location already open at 300 W. Pratt St. with another set to open in Clipper Mill by the end of the year.
-
 ----
-
 Link: https://www.bizjournals.com/baltimore/news/2018/10/11/the-takeaway-homebase-finds-ways-to-stand-out-in.html
+----

@@ -1,13 +1,14 @@
+Status: listed
+----
+Template: file
+----
 Title: plans
 ----
-Status: listed
-Template: file
 Alt: Clipper Mill
-
 ----
-
 Caption: Homebase at Clipper Mill
-
 ----
-
 Align: bottom
+----
+alt: Image: plans
+----

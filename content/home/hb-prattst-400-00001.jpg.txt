@@ -1,13 +1,14 @@
+Status: listed
+----
+Template: file
+----
 Title: home
 ----
-Status: listed
-Template: file
 Alt: 
-
 ----
-
 Caption: 
-
 ----
-
 Align: 
+----
+alt: Image: home
+----

@@ -1,17 +1,16 @@
+Status: listed
+----
+Template: file
+----
 Title: pratt-st
 ----
-Status: listed
-Template: file
 Alt: 
-
 ----
-
 Caption: 
-
 ----
-
 Align: 
-
 ----
-
 Sort: 3
+----
+alt: Image: pratt-st
+----

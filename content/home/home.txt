@@ -1,15 +1,12 @@
 Status: listed
+----
 Template: home
+----
 Title: Home
 ----
-
 Intro: Leave it better than we found it.
-
 ----
-
-Text: 
-
-Looking for a progressive workspace to meet your entrepreneurial, remote worker or small business needs? Look no further. Homebase is a Baltimore grown coworking space dedicated to providing above and beyond the basic necessities of an office by creating a welcoming atmosphere and a networking culture.
+Text: Looking for a progressive workspace to meet your entrepreneurial, remote worker or small business needs? Look no further. Homebase is a Baltimore grown coworking space dedicated to providing above and beyond the basic necessities of an office by creating a welcoming atmosphere and a networking culture.
 
 True to its name, Homebase feels like home but creates an atmosphere to get your job done.  Each coworking space has been carefully designed with you in mind.  Windows offer bright, natural light, and the minimalist but comfortable furniture placement and design help to reduce stress.  
 
@@ -25,16 +22,10 @@ You, your best friend, your sister, your brother, your old boss.  Everyone needs
 - Coworking provides a space to collaborate with other driven, experienced professionals that working from home does not offer.
 
 Reserve your business mailing address, permanent office, conference room or flexible workspace with Homebase today. Whatever you choose, you will be able to enjoy every minute of your day around Baltimore’s inner harbor. Book your tour, see the place and join the Homebase community today and start on your way to a more productive work week!
-
 ----
-
 Coverimage: fp-rude.png
-
 ----
-
-Slides: 
-
-- 
+Slides: - 
   gallery_image: homebase-prattst-43.jpg
   slidetitle: 'Discover the <a href=".">functions</a> of 300 West Pratt Street.'
   slideimg: homebase-prattst-43.jpg
@@ -52,53 +43,31 @@ Slides:
   slidecaption: >
     Work Smart on Standing Desks, made by
     Fully.
-
 ----
-
 Slideshow: 
-
 ----
-
 Featuredimg: hb-pratt-plans.png
-
 ----
-
 Featuredtitle: New Office Space Underway
-
 ----
-
 Featuredsubtitle: Choose between our convenient locations
-
 ----
-
 Cover: 
-
 ----
-
-Gallery: 
-
-- hb-prattst-400-00001.jpg
+Gallery: - hb-prattst-400-00001.jpg
 - hb-prattst-400-00004.jpg
 - hb-prattst-400-00002.jpg
 - homebase-eventbase-15.jpg
 - homebase-eventbase-8.jpg
 - homebase-eventbase-3.jpg
-
 ----
-
-Texta: 
-
-Looking for a progressive workspace to meet your entrepreneurial, remote worker or small business needs? Look no further. Homebase is a Baltimore grown coworking space dedicated to providing above and beyond the basic necessities of an office by creating a welcoming atmosphere and a networking culture.
+Texta: Looking for a progressive workspace to meet your entrepreneurial, remote worker or small business needs? Look no further. Homebase is a Baltimore grown coworking space dedicated to providing above and beyond the basic necessities of an office by creating a welcoming atmosphere and a networking culture.
 
 True to its name, Homebase feels like home but creates an atmosphere to get your job done. Each coworking space has been carefully designed with you in mind. Windows offer bright, natural light, and the minimalist but comfortable furniture placement and design help to reduce stress.
 
 Whether you need a space for a day, a week, a month or a year Homebase has you covered through its flexible and affordable rental options. You can choose to drop in and pick a desk at random or have secured 24/7 access to your own private office space. Whatever your budget or your needs, Homebase will meet them.
-
 ----
-
-Textb: 
-
-When you choose Homebase you don't have to worry about parking, printing or plugging-in. Reserved lots, car charging, top-of-the-line printers, lighting fast wi-fi connections, lobby concierge, and a bounty of local food and drink options are all included with your Homebase package. We don't want you to worry about anything except for having a good time and getting your job done.
+Textb: When you choose Homebase you don't have to worry about parking, printing or plugging-in. Reserved lots, car charging, top-of-the-line printers, lighting fast wi-fi connections, lobby concierge, and a bounty of local food and drink options are all included with your Homebase package. We don't want you to worry about anything except for having a good time and getting your job done.
 
 **Who needs Homebase?**
 You, your best friend, your sister, your brother, your old boss. Everyone could benefit from Homebase.
@@ -109,3 +78,4 @@ You, your best friend, your sister, your brother, your old boss. Everyone could 
 - Coworking provides a space to collaborate with other driven, experienced professionals that working from home does not offer.
 
 Reserve your business mailing address, permanent office, conference room or flexible workspace with Homebase today. Whatever you choose, you will be able to enjoy every minute of your day around Baltimore’s inner harbor. Book your tour, see the place and join the Homebase community today and start on your way to a more productive work week!
+----

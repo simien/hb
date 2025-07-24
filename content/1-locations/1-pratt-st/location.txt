@@ -2,18 +2,11 @@ Status: listed
 ----
 Template: location
 ----
-
 Title: Pratt St
-
 ----
-
 Intro: Your organization is unique, your office space should be too.
-
 ----
-
-Description: 
-
-Baltimore is a city of dreamers and doers and the Homebase location at 300 W. Pratt is designed with those dreamers and doers in mind.  As one of Baltimore's most sought-after business addresses it's a dream for professionals to have a chance to work inside.  The historic building offers tall, wide windows that flood the workspace with natural light and the intricate architecture offers lots to look at for the wandering, daydreaming eye.
+Description: Baltimore is a city of dreamers and doers and the Homebase location at 300 W. Pratt is designed with those dreamers and doers in mind.  As one of Baltimore's most sought-after business addresses it's a dream for professionals to have a chance to work inside.  The historic building offers tall, wide windows that flood the workspace with natural light and the intricate architecture offers lots to look at for the wandering, daydreaming eye.
 
 The trip to 300 W. Pratt St. is a simple morning commute from nearly anywhere in the city.  If you are driving you can access this location off of the interstate and there is reserved parking nearby.  If public transportation is more your style, there is a convenient bus stop not too far from the front door.  Either way, getting to work is easy but if you are using Homebase you probably aren't worried about being late.
 
@@ -27,52 +20,28 @@ As a coworking space, it is hard to beat 300 W. Pratt. However, this location of
 Whether you are just starting out or you are looking for a solution to boost your business and production, you won't be disappointed when you choose the Homebase location at 300 W. Pratt.  Not only will you enjoy the location and the beautiful spaces, but your business will benefit in the end.
 
 Contact us today to learn more about the offerings at 300 W. Pratt and how they can help you!
-
 ----
-
 Address: 300 W Pratt St, Suite 350, Baltimore, MD 21201
-
 ----
-
 Phone: 410-826-0086
-
 ----
-
 Email: info@homebase.works
-
 ----
-
 Street: 300 W Pratt St
-
 ----
-
 Suite: Suite 350
-
 ----
-
 City: Baltimore
-
 ----
-
 State: Maryland
-
 ----
-
 Zip: 21201
-
 ----
-
 Lat: 39.286620
-
 ----
-
 Long: -76.619692
-
 ----
-
-Features: 
-
-- 
+Features: - 
   featuretitle: Made in Baltimore
   featuredesc: "Baltimore is full of pioneers. Let's continue the growth and work together."
   featureicon: heart
@@ -116,20 +85,13 @@ Features:
   featuretitle: Lobby Concierge
   featuredesc: "Clients arriving for a meeting? Mail arrived? No worries, we'll notify you."
   featureicon: user
-
 ----
-
-Slideshow: 
-
-- hb-prattst-400-00003.jpg
+Slideshow: - hb-prattst-400-00003.jpg
 - hb-prattst-400-00001.jpg
 - hb-prattst-400-00002.jpg
 - hb-prattst-400-00004.jpg
-
 ----
-
 Cover: 
-
 ----
-
 Airtable: shrlv6vMjgtCLuHqh
+----

@@ -1,13 +1,14 @@
+Status: listed
+----
+Template: file
+----
 Title: plans
 ----
-Status: listed
-Template: file
 Alt: 
-
 ----
-
 Caption: 
-
 ----
-
 Align: 
+----
+alt: Image: plans
+----

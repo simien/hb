@@ -1,17 +1,12 @@
-Title: clipper-mill
-----
 Status: listed
 ----
 Template: location
 ----
-
-Intro: A dynamic place to live, work and love. Our doors open early 2019.
-
+Title: clipper-mill
 ----
-
-Description: 
-
-The Homebase coworking space at Clipper Mill is the desired business location that offers a trendy workspace and convenient access.  The historic apartment buildings that the Clipper Mill Homebase location is situated in offers industrial design with modern touches that would make any traditional office space envious.  Partner the flooding natural light from the floor to ceiling windows with the comfortable office furniture and you will never want to leave work.
+Intro: A dynamic place to live, work and love. Our doors open early 2019.
+----
+Description: The Homebase coworking space at Clipper Mill is the desired business location that offers a trendy workspace and convenient access.  The historic apartment buildings that the Clipper Mill Homebase location is situated in offers industrial design with modern touches that would make any traditional office space envious.  Partner the flooding natural light from the floor to ceiling windows with the comfortable office furniture and you will never want to leave work.
 
 Getting to the Homebase location at Clipper Mill is easy for nearly everyone.  Situated right off of two major interstates and just a short walk away from the public bus stop, it makes for an enviable commute to anyone in the Baltimore, Maryland metropolitan area.  When you choose Clipper Mill you will love going to work every day.  In fact, you will love it so much that you will probably never want to go home.
 
@@ -24,52 +19,28 @@ Clipper Mill offers some of the best solutions for coworking in Baltimore, makin
 No matter what type of business needs you have, the Homebase location at Clipper Mill can help you meet them.  When you choose Clipper Mill you will be on your way to a more enjoyable and better work week.
 
 Contact us today for answers to all of your questions about the Homebase location at Clipper mill or to reserve your space today!
-
 ----
-
 Address: 2002 Clipper Park Road, Assembly Suite 107, Baltimore, MD 21211
-
 ----
-
 Phone: 410-826-0086
-
 ----
-
 Email: info@homebase.works
-
 ----
-
 Street: 2031 Clipper Park Rd
-
 ----
-
 Suite: Assembly 106
-
 ----
-
 City: Baltimore
-
 ----
-
 State: Maryland
-
 ----
-
 Zip: 21218
-
 ----
-
 Lat: 39.332159
-
 ----
-
 Long: -76.644180
-
 ----
-
-Features: 
-
-- 
+Features: - 
   featuretitle: Made in Baltimore
   featuredesc: "Baltimore is full of pioneers. Let's continue the growth and work together."
   featureicon: heart
@@ -112,20 +83,13 @@ Features:
   featuretitle: Lobby Concierge
   featuredesc: "Clients arriving for a meeting? Mail arrived? No worries, we'll notify you."
   featureicon: user
-
 ----
-
-Slideshow: 
-
-- clippermill-location.jpg
+Slideshow: - clippermill-location.jpg
 - homebaseworks-clippermill-00002.jpg
 - homebaseworks-clippermill-00011.jpg
 - homebaseworks-clippermill-00015.jpg
-
 ----
-
 Cover: 
-
 ----
-
 Airtable: shr9F3FvxjVJhDbO9
+----

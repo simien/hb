@@ -1,45 +1,26 @@
-Title: doublebase
-----
 Status: listed
 ----
 Template: base
 ----
-
+Title: doublebase
+----
 Cover: openingsoon@2x.png
-
 ----
-
 Airtable: shrGhCMgKFtGTvL8q
-
 ----
-
 Price: 1250
-
 ----
-
 Interval: mo
-
 ----
-
 Subtitle: Double Office
-
 ----
-
 Intro: Private Office Space for two people plotting takeover.
-
 ----
-
-Description: 
-
-Our offices are built for those who want to be well-equipped for long days and late nights.  Every person who chooses to purchase an office membership at Pratt St will get full access to the Homebase community and 24/7 access to their official workspace.  The best part is, after a late night at the office members won't even have to pack up their belongings because they will be kept safe and sound in their private, secured, workspace until they are ready to go the next day.
+Description: Our offices are built for those who want to be well-equipped for long days and late nights.  Every person who chooses to purchase an office membership at Pratt St will get full access to the Homebase community and 24/7 access to their official workspace.  The best part is, after a late night at the office members won't even have to pack up their belongings because they will be kept safe and sound in their private, secured, workspace until they are ready to go the next day.
  
 All office members will have a locking, private office equipped with a Jarvis Standing desk, comfortable chair, storage and plenty of natural light.  For an affordable price dedicated small business owners and serious entrepreneurs won’t be able to find a better deal anywhere else!
-
 ----
-
-Features: 
-
-- 
+Features: - 
   featuretitle: 24/7 Secure Access
 - 
   featuretitle: Reserved Officespace
@@ -49,7 +30,6 @@ Features:
   featuretitle: '10% Off Premium Events'
 - 
   featuretitle: Postbase Included
-
 ----
-
 Icon: users
+----

@@ -1,4 +1,8 @@
 Status: listed
+----
 Template: sitemap
+----
 Title: Sitemap
----- 
+----
+Text: 
+----

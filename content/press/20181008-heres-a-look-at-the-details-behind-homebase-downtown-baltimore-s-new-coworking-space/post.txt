@@ -1,21 +1,16 @@
 Status: listed
+----
 Template: post
+----
 Title: Here’s a look at the details behind Homebase, downtown Baltimore’s new coworking space
-
 ----
-
 Date: 2018-10-08
-
 ----
-
-Text:
-
-A coworking community is forming downtown across from the Baltimore Convention Center.
+Text: A coworking community is forming downtown across from the Baltimore Convention Center.
 
 Homebase is opening this fall with 3,000 sq. ft. of space on the fourth floor of 300 W. Pratt St.
 
 On a recent tour, Director of Operations Simien Antonis Parr said the space has six single offices and three two-person offices. There’s also open desk space with room for 10 more people. Members can also get access to meeting rooms and a kitchen area, and it boasts a fast WiFi connection.
-
 ----
-
 Link: https://technical.ly/baltimore/2018/10/08/heres-a-look-at-the-details-that-went-into-homebase-downtown-baltimores-new-coworking-space/
+----

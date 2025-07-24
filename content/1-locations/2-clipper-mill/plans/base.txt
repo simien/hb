@@ -1,43 +1,26 @@
 Status: listed
+----
 Template: base
-Prevnext: 
-
 ----
-
 Title: Plans
-
 ----
-
+Prevnext: 
+----
 Subtitle: 
-
 ----
-
 Intro: 
-
 ----
-
 Airtable: 
-
 ----
-
 Price: 
-
 ----
-
 Interval: 
-
 ----
-
 Cover: 
-
 ----
-
 Icon: 
-
 ----
-
 Description: 
-
 ----
-
 Features: 
+----

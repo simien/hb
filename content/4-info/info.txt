@@ -1,10 +1,10 @@
 Status: listed
+----
 Template: info
+----
 Title: Info
 ----
-
 Intro: 
-
 ----
-
 Text: 
+----

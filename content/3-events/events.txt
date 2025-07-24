@@ -1,10 +1,10 @@
 Status: listed
+----
 Template: events
+----
 Title: Events
 ----
-
 Intro: 
-
 ----
-
 Text: 
+----

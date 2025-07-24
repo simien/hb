@@ -1,13 +1,14 @@
+Status: listed
+----
+Template: file
+----
 Title: clipper-mill
 ----
-Status: listed
-Template: file
 Alt: 
-
 ----
-
 Caption: 
-
 ----
-
 Align: 
+----
+alt: Image: clipper-mill
+----
