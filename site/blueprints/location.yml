@@ -1,3 +1,4 @@
+---
 title: Location
 
 files:
@@ -29,11 +30,11 @@ fields:
 
   title:
     label: Title
-    type:  text
+    type: text
 
   intro:
     label: Intro
-    type:  text
+    type: text
     width: 2/3
 
   cover:
@@ -43,7 +44,7 @@ fields:
 
   description:
     label: Description
-    type:  textarea
+    type: textarea
 
   contactBlock:
     label: Contact
@@ -51,12 +52,12 @@ fields:
 
   phone:
     label: Phone
-    type:  tel
+    type: tel
     width: 1/2
 
   email:
     label: Email
-    type:  text
+    type: text
     width: 1/2
 
   addressBlock:
@@ -90,12 +91,12 @@ fields:
 
   lat:
     label: Latitude
-    type:  text
+    type: text
     width: 1/2
 
   long:
     label: Longitude
-    type:  text
+    type: text
     width: 1/2
 
   sliderBlock:

@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'email' => 'simienap@gmail.com',
+    'email' => 'santonisparr@gmail.com',
     'language' => 'en',
-    'name' => 'sap',
+    'name' => 'hbw',
     'role' => 'admin'
 ];

@@ -1,3 +1,4 @@
+---
 title: Article
 
 pages: false
@@ -5,7 +6,7 @@ pages: false
 fields:
   title:
     label: Title
-    type:  title
+    type: title
 
   author:
     label: Author

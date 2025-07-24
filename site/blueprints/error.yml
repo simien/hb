@@ -1,3 +1,4 @@
+---
 title: Error
 
 pages: false
@@ -5,15 +6,15 @@ pages: false
 fields:
   title:
     label: Title
-    type:  text
+    type: text
 
   intro:
     label: Intro
-    type:  textarea
+    type: textarea
 
   text:
     label: Text
-    type:  textarea
+    type: textarea
 
   cover:
     label: Cover

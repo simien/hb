@@ -1,3 +1,4 @@
+---
 title: Home
 
 pages: false
@@ -21,7 +22,7 @@ files:
 fields:
   title:
     label: Title
-    type:  text
+    type: text
 
   cover:
     label: Cover
@@ -31,15 +32,15 @@ fields:
 
   intro:
     label: Intro
-    type:  textarea
+    type: textarea
 
   texta:
     label: Text
-    type:  textarea
+    type: textarea
 
   textb:
     label: Text
-    type:  textarea
+    type: textarea
 
   sliderBlock:
     label: Slider

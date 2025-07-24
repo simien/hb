@@ -1,0 +1,5 @@
+Title: Test
+Status: listed
+Template: test
+----
+text: This is a test page.
