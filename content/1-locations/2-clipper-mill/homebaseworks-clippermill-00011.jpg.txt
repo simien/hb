@@ -1,3 +1,7 @@
+Title: clipper-mill
+----
+Status: listed
+Template: file
 Alt: 
 
 ----

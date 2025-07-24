@@ -21,7 +21,7 @@
 			<div class="uk-container uk-container-expand">
 
 				<ul uk-grid>
-					<?php $visibleMembers = $page->children()->visible() ?? []; ?>
+					<?php $visibleMembers = $page->children()->listed() ?? []; ?>
 					<?php foreach($visibleMembers as $member): ?>
 						<li class="uk-width-1-3">
 

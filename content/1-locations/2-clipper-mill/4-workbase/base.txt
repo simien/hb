@@ -1,5 +1,8 @@
-Title: Workbase
-
+Title: workbase
+----
+Status: listed
+----
+Template: base
 ----
 
 Price: 400

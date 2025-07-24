@@ -1,3 +1,5 @@
+Status: listed
+Template: post
 Title: Here’s a look at the details behind Homebase, downtown Baltimore’s new coworking space
 
 ----

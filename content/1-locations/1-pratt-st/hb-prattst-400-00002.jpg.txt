@@ -1,3 +1,7 @@
+Title: pratt-st
+----
+Status: listed
+Template: file
 Alt: 
 
 ----

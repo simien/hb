@@ -11,7 +11,7 @@ return function($site, $pages, $page) {
 
   $perpage  = $page->perpage()->int();
   $articles = $page->children()
-                   ->visible()
+                   ->listed()
                    ->flip()
                    ->paginate(($perpage >= 1)? $perpage : 5);
 

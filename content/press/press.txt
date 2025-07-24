@@ -1,5 +1,6 @@
+Status: listed
+Template: press
 Title: Press
-
 ----
 
 Text: 

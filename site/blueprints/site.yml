@@ -1,90 +1,72 @@
 title: Site
-
+pages: true
 fields:
   defaultBlock:
     label: Default
     type: headline
-
   name:
     label: Name
     type:  text
-
   title:
     label: Title
     type:  text
-
   description:
     label: Description
     type:  textarea
-
   keywords:
     label: Keywords
     type:  tags
-
   cover:
     label: Cover
-    type: image
-
+    type: files
+    multiple: false
+    layout: cards
   author:
     label: Author
     type:  text
     width: 1/4
-
   copyright:
     label: Copyright
     type:  text
     width: 3/4
-
   contactBlock:
     label: Contact
     type: headline
-
   phone:
     label: Phone
     type:  tel
     width: 1/2
-
   email:
     label: Email
     type:  email
     width: 1/2
-
   disqusBlock:
     label: Disqus
     type: headline
-
   disqus:
     label: Shortname
     type:  text
-
   blendBlock:
     label: Blend
     type: headline
-
   bkgd:
     label: Background
     type:  text
-
   blend:
     label: Mode
     type:  text
-
   socialBlock:
     label: Social
     type: headline
-
   twitterlink:
     label: Twitter
     type:  url
-
   facebooklink:
     label: Facebook
     type:  url
-
   instagramlink:
     label: Instagram
     type:  url
-
   youtubelink:
     label: Youtube
     type:  url

@@ -1,5 +1,8 @@
-Title: Postbase
-
+Title: postbase
+----
+Status: listed
+----
+Template: base
 ----
 
 Price: 35

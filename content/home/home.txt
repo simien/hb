@@ -1,5 +1,6 @@
+Status: listed
+Template: home
 Title: Home
-
 ----
 
 Intro: Leave it better than we found it.

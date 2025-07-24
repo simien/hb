@@ -3,9 +3,14 @@
 use Kirby\Toolkit\Str;
 
 $blogPage = page('blog');
-$blog = $blogPage ? $blogPage->children()->visible() : [];
+$blog = [];
 
-if (is_array($blog)) {
+if ($blogPage && $blogPage->children()) {
+    $blog = $blogPage->children()->listed();
+}
+
+// Ensure we always have an iterable
+if (!is_object($blog) || !($blog instanceof Kirby\Cms\Pages)) {
     $blog = new Kirby\Cms\Pages([]);
 }
 
@@ -23,10 +28,13 @@ https://getkirby.com/docs/templates/snippets
 
 */
 
-if(isset($limit)) $blog = $blog->limit($limit);
+if(isset($limit) && $blog instanceof Kirby\Cms\Pages) {
+    $blog = $blog->limit($limit);
+}
 
 ?>
 
+<?php if ($blog && $blog->count() > 0): ?>
 <?php foreach($blog as $article): ?>
 
 <a href="<?= $article->url() ?>" class="uk-link-reset">
@@ -55,3 +63,4 @@ if(isset($limit)) $blog = $blog->limit($limit);
 </a>
 
 <?php endforeach ?>
+<?php endif ?>

@@ -1,3 +1,8 @@
+Template: team
+Status: listed
+
+----
+
 Title: Hunter S. Tomcat
 
 ----

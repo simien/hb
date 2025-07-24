@@ -3,6 +3,6 @@
 return [
     'email' => 'simienap@gmail.com',
     'language' => 'en',
-    'name' => '',
+    'name' => 'hbw',
     'role' => 'admin'
 ];

@@ -25,7 +25,9 @@ fields:
 
   cover:
     label: Cover
-    type: image
+    type: files
+    multiple: false
+    layout: cards
 
   intro:
     label: Intro
@@ -45,7 +47,9 @@ fields:
 
   slideshow:
     label: Slideshow
-    type: images
+    type: files
+    multiple: true
+    layout: cards
     limit: 3
 
   galleryBlock:
@@ -54,4 +58,6 @@ fields:
 
   gallery:
     label: Gallery
-    type: images
+    type: files
+    multiple: true
+    layout: cards

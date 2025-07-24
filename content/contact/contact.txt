@@ -1,5 +1,6 @@
+Status: listed
+Template: contact
 Title: Contact
-
 ----
 
 Text: 

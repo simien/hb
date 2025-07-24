@@ -1,5 +1,8 @@
-Title: Singlebase
-
+Title: singlebase
+----
+Status: listed
+----
+Template: base
 ----
 
 Cover: openingsoon@2x.png

@@ -1,8 +1,10 @@
+Status: listed
+Template: site
 Title: Homebase
 
 ----
 
-Author: hbw
+Name: Homebase
 
 ----
 
@@ -10,15 +12,19 @@ Description: Coworking in Baltimore, MD
 
 ----
 
-Copyright: © 2017–(date: Year) (link: http://homebase.works text: HB WORKS)
+Keywords: Coworking, Workspace, Office Space
 
 ----
 
-Keywords: Coworking,Workspace,Office Space
+Cover: - file://LgN0m4oL3jMl1Mmq
 
 ----
 
-Favicon: favicon.ico
+Author: hbw
+
+----
+
+Copyright: © 2017–(date: Year) HB WORKS
 
 ----
 
@@ -30,19 +36,15 @@ Email: info@homebase.works
 
 ----
 
-Og-title: 
+Disqus: hbdev
 
 ----
 
-Og-site-name: 
+Bkgd: secondary
 
 ----
 
-Og-description: 
-
-----
-
-Og-image: 
+Blend: screen
 
 ----
 
@@ -62,20 +64,20 @@ Youtubelink:
 
 ----
 
-Name: Homebase
+Favicon: favicon.ico
 
 ----
 
-Cover: cover.png
+Og-title: 
 
 ----
 
-Disqus: hbdev
+Og-site-name: 
 
 ----
 
-Blend: screen
+Og-description: 
 
 ----
 
-Bkgd: secondary
+Og-image: 

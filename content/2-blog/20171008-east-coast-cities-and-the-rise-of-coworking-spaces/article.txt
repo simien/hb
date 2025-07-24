@@ -1,3 +1,7 @@
+Status: listed
+----
+Template: article
+----
 Title: East Coast Cities and The Rise of Coworking Spaces
 
 ----

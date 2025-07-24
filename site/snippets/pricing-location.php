@@ -1,6 +1,6 @@
 <?php
 
-$bases = $page->children()->slice(0, 7)->visible();
+$bases = $page->children()->slice(0, 7)->listed();
 
 ?>
 <div>

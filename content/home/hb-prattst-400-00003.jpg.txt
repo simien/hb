@@ -1,3 +1,7 @@
+Title: home
+----
+Status: listed
+Template: file
 Alt: 
 
 ----

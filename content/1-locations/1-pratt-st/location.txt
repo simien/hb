@@ -1,3 +1,8 @@
+Status: listed
+----
+Template: location
+----
+
 Title: Pratt St
 
 ----

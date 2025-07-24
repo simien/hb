@@ -1,5 +1,8 @@
-Title: Clipper Mill
-
+Title: clipper-mill
+----
+Status: listed
+----
+Template: location
 ----
 
 Intro: A dynamic place to live, work and love. Our doors open early 2019.

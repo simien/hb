@@ -1,3 +1,5 @@
+Status: listed
+Template: base
 Prevnext: 
 
 ----

@@ -4,10 +4,10 @@
 $directionPrev = @$flip ? 'left' : 'right';
 $directionNext = @$flip ? 'right'  : 'left';
 
-if($page->hasNextVisible() || $page->hasPrevVisible()): ?>
+if($page->hasNextListed() || $page->hasPrevListed()): ?>
 
-	<?php if($page->hasPrevVisible()): ?>
-    <a class="uk-background-default uk-padding" href="<?= $page->prevVisible()->url() ?>" rel="prev" title="<?= $page->prevVisible()->title()->html() ?>" uk-tooltip="pos: top">
+	<?php if($page->hasPrevListed()): ?>
+    <a class="uk-background-default uk-padding" href="<?= $page->prevListed()->url() ?>" rel="prev" title="<?= $page->prevListed()->title()->html() ?>" uk-tooltip="pos: top">
       <div class="uk-text-uppercase rohn-b">
 				<span uk-icon="icon: chevron-<?= $directionPrev ?>; ratio: 2"></span>
 				&nbsp;&nbsp;Older
@@ -22,8 +22,8 @@ if($page->hasNextVisible() || $page->hasPrevVisible()): ?>
 	</a>
 	<?php endif ?>
 
-	<?php if($page->hasNextVisible()): ?>
-    <a class="uk-background-default uk-padding" href="<?= $page->nextVisible()->url() ?>" rel="prev" title="<?= $page->nextVisible()->title()->html() ?>" uk-tooltip="pos: top">
+	<?php if($page->hasNextListed()): ?>
+    <a class="uk-background-default uk-padding" href="<?= $page->nextListed()->url() ?>" rel="prev" title="<?= $page->nextListed()->title()->html() ?>" uk-tooltip="pos: top">
       <div class="uk-text-uppercase rohn-b">
 				Newer&nbsp;&nbsp;
 				<span uk-icon="icon: chevron-<?= $directionNext ?>; ratio: 2"></span>

@@ -1,7 +1,7 @@
 <?php
 
 $projectsPage = page('projects');
-$projects = $projectsPage ? $projectsPage->children()->visible() : [];
+$projects = $projectsPage ? $projectsPage->children()->listed() : [];
 
 /*
 

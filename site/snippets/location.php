@@ -1,6 +1,6 @@
 <?php
 $locationsPage = page('locations');
-$locations = $locationsPage ? $locationsPage->children()->visible() : [];
+$locations = $locationsPage ? $locationsPage->children()->listed() : [];
 
 if(isset($limit)) $locations = $locations->limit($limit);
 ?>

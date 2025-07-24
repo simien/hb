@@ -1,5 +1,9 @@
 <?php snippet('header') ?>
 
+<?php
+use Kirby\Toolkit\Str;
+?>
+
 	<main class="main" role="main" uk-height-viewport="expand:true">
 
 		<section class="uk-section uk-section-muted uk-section-small uk-hidden">
@@ -33,7 +37,7 @@
 
 				<div class="uk-container uk-container-expand uk-padding-remove-vertical  uk-margin-medium-bottom">
 					<div class="uk-child-width-1-3@m" uk-grid uk-height-match="target: > a > .uk-card">
-						<?php if($articles = page('press')->children()->visible()->limit(3)): ?>
+						<?php if($articles = page('press')->children()->listed()->limit(3)): ?>
 							<?php foreach($articles as $article): ?>
 								<a href="<?= $article->link() ?>" class="uk-link-reset" target="_blank">
 									<article class="uk-card uk-card-default">
@@ -41,7 +45,7 @@
 												<p class="uk-article-meta uk-heading-bullet">Written on <span class="hb-text-dark"><date><?= $article->date('F jS, Y') ?></date></span></p>
 												<p class="uk-h4 hb-text-secondary hb-spacing-small uk-text-capitalize uk-text-bold uk-margin-remove-top"><?= $article->title()->html() ?></p>
 												<hr>
-												<p><?php echo excerpt($article->text(), 125) ?></p>
+												<p><?php echo Str::excerpt($article->text(), 125) ?></p>
 											</div>
 											<div class="uk-card-footer">
 														<p class="uk-button uk-button-text" href="#">Read more</p>
@@ -60,7 +64,7 @@
 				</div>
 
 				<div class="uk-child-width-1-2@m" uk-grid>
-					<?php if($articles = $page->children()->visible()->flip()->paginate(2)): ?>
+					<?php if($articles = $page->children()->listed()->flip()->paginate(2)): ?>
 						<?php foreach($articles as $article): ?>
 							<a href="<?= $article->url() ?>" class="uk-link-reset uk-margin-medium-top">
 								<article class="uk-card uk-card-default">
@@ -74,7 +78,7 @@
 											<p class="uk-article-meta uk-heading-bullet">Written on <span class="hb-text-dark"><date><?= $article->date('F jS, Y') ?></date></span></p>
 											<p class="uk-h2 hb-text-secondary hb-spacing-small uk-text-capitalize uk-text-bold uk-margin-remove-top"><?= $article->title()->html() ?></p>
 											<hr>
-											<p><?php echo excerpt($article->text(), 200) ?></p>
+											<p><?php echo Str::excerpt($article->text(), 200) ?></p>
 										</div>
 										<div class="uk-card-footer">
 													<p class="uk-button uk-button-text" href="#">Read more</p>

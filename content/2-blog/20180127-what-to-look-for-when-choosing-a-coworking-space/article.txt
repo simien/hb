@@ -1,3 +1,7 @@
+Status: listed
+----
+Template: article
+----
 Title: What to look for when choosing a coworking space
 
 ----

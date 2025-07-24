@@ -1,11 +1,10 @@
 <?php
 $locationsPage = page('locations');
-$locations = $locationsPage ? $locationsPage->children()->visible() : [];
+$children = $locationsPage ? $locationsPage->children() : null;
+$locations = ($children && is_object($children) && method_exists($children, 'listed')) ? $children->listed() : null;
 
-if(isset($limit)) $locations = $locations->limit($limit);
-?>
-
-<?php foreach($locations as $location): ?>
+if ($locations && $locations instanceof Kirby\Cms\Pages && $locations->count() > 0): ?>
+  <?php foreach($locations as $location): ?>
 
 	<a href="<?= $location->url() ?>" class="uk-link-reset uk-margin-medium-top">
 		<div class="uk-box-shadow-small uk-box-shadow-hover-medium uk-card uk-grid-collapse uk-flex uk-flex-column" uk-grid>
@@ -31,7 +30,7 @@ if(isset($limit)) $locations = $locations->limit($limit);
 						<p><?= $location->description()->html()->excerpt(200) ?></p>
 						<hr>
 						<div class="uk-grid-small uk-child-width-1-2@m uk-child-width-1-1@s" uk-grid>
-							<?php	$bases = $location->children()->slice(0, 7)->visible(); ?>
+							<?php	$bases = $location->children()->slice(0, 7)->listed(); ?>
 							<?php foreach($bases as $base): ?>
 							<div class="uk-margin-bottom-small uk-divider-small">
 								<div class="uk-grid-collapse uk-flex" uk-grid>
@@ -59,4 +58,5 @@ if(isset($limit)) $locations = $locations->limit($limit);
 		</div>
 	</a>
 
-<?php endforeach ?>
+  <?php endforeach ?>
+<?php endif ?>

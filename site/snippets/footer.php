@@ -52,17 +52,22 @@
 				<h4>Latest Articles</h4>
 				<ul class="footer-links uk-list">
 					<?php $blogPage = $site->find('blog'); ?>
-					<?php if ($blogPage): ?>
-						<?php foreach($blogPage->children()->visible()->limit(3) as $subpage): ?>
-						<li>
-							<time datetime="<?php echo $subpage->date('c') ?>">
-								<?php echo $subpage->date('d/m/y') ?>
-							</time>
-							<a href="<?php echo $subpage->url() ?>">
-								</date> <?php echo html($subpage->title()) ?>
-							</a>
-						</li>
-						<?php endforeach ?>
+					<?php if ($blogPage && $blogPage->children()): ?>
+						<?php $visibleChildren = $blogPage->children()->listed(); ?>
+						<?php if ($visibleChildren && $visibleChildren->count() > 0): ?>
+							<?php foreach($visibleChildren->limit(3) as $subpage): ?>
+							<li>
+								<time datetime="<?php echo $subpage->date('c') ?>">
+									<?php echo $subpage->date('d/m/y') ?>
+								</time>
+								<a href="<?php echo $subpage->url() ?>">
+									</date> <?php echo html($subpage->title()) ?>
+								</a>
+							</li>
+							<?php endforeach ?>
+						<?php else: ?>
+							<li><span class="uk-text-muted">No articles found</span></li>
+						<?php endif; ?>
 					<?php else: ?>
 						<li><span class="uk-text-muted">No blog found</span></li>
 					<?php endif; ?>
@@ -72,14 +77,21 @@
 				<h4>Locations</h4>
 				<ul class="footer-links uk-list">
 					<?php $locationsPage = $pages->find('locations'); ?>
-					<?php if($locationsPage): ?>
-						<?php foreach($locationsPage->children()->visible() as $subpage): ?>
-						<li>
-							<a href="<?php echo $subpage->url() ?>">
-								<?php echo html($subpage->title()) ?>
-							</a>
-						</li>
-						<?php endforeach ?>
+					<?php if($locationsPage && $locationsPage->children()): ?>
+						<?php $visibleLocations = $locationsPage->children()->listed(); ?>
+						<?php if ($visibleLocations && $visibleLocations->count() > 0): ?>
+							<?php foreach($visibleLocations as $subpage): ?>
+							<li>
+								<a href="<?php echo $subpage->url() ?>">
+									<?php echo html($subpage->title()) ?>
+								</a>
+							</li>
+							<?php endforeach ?>
+						<?php else: ?>
+							<li><span class="uk-text-muted">No locations found</span></li>
+						<?php endif; ?>
+					<?php else: ?>
+						<li><span class="uk-text-muted">No locations page found</span></li>
 					<?php endif ?>
 				</ul>
 			</div>

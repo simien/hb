@@ -2,7 +2,7 @@
 <?php
 
 $locationsPage = page('locations');
-$bases = $locationsPage ? $locationsPage->grandChildren()->slice(0, 4)->visible() : [];
+$bases = $locationsPage ? $locationsPage->grandChildren()->slice(0, 4)->listed() : [];
 
 ?>
 	<div>

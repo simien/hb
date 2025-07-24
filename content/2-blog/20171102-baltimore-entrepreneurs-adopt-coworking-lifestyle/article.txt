@@ -1,3 +1,7 @@
+Status: listed
+----
+Template: article
+----
 Title: Baltimore Entrepreneurs Adopt Coworking Lifestyle
 
 ----

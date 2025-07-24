@@ -33,7 +33,7 @@
 
 				<div class="uk-container uk-container-expand uk-padding-remove-vertical  uk-margin-medium-bottom">
 					<div class="uk-child-width-1-3@m" uk-grid uk-height-match="target: > a > .uk-card">
-						<?php if($articles = $page->children()->visible()->flip()->paginate(3)): ?>
+						<?php if($articles = $page->children()->listed()->flip()->paginate(3)): ?>
 							<?php foreach($articles as $article): ?>
 								<a href="<?= $article->url() ?>" class="uk-link-reset">
 									<article class="uk-card uk-card-default">
@@ -56,7 +56,7 @@
 				</div>
 
 				<div class="uk-child-width-1-2@m" uk-grid>
-					<?php if($articles = $page->children()->visible()->flip()->paginate(2)): ?>
+					<?php if($articles = $page->children()->listed()->flip()->paginate(2)): ?>
 						<?php foreach($articles as $article): ?>
 							<a href="<?= $article->url() ?>" class="uk-link-reset uk-margin-medium-top">
 								<article class="uk-card uk-card-default">
