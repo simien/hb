@@ -1,6 +1,6 @@
 Status: listed
 ----
-Template: default.en
+Template: default
 ----
 Title: Blog
 ----

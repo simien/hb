@@ -1,6 +1,6 @@
 Status: listed
 ----
-Template: post
+Template: article
 ----
 Title: The Takeaway: Homebase finds ways to stand out in crowded coworking market
 ----

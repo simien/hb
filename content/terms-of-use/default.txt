@@ -1,6 +1,6 @@
 Status: listed
 ----
-Template: terms-of-use
+Template: default
 ----
 Title: Terms of Use
 ----

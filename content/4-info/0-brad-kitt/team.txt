@@ -1,6 +1,6 @@
 Status: listed
 ----
-Template: team
+Template: default
 ----
 Title: Brad Kitt
 ----

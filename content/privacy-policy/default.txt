@@ -1,6 +1,6 @@
 Status: listed
 ----
-Template: privacy-policy
+Template: default
 ----
 Title: Privacy Policy
 ----

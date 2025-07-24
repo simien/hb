@@ -1,6 +1,6 @@
 Status: listed
 ----
-Template: post
+Template: article
 ----
 Title: ValStone Partners opening coworking offices in Clipper Mill, downtown
 ----
